@@ -15,7 +15,7 @@ export function Footer() {
         <div>
           <p className="font-serif text-2xl font-bold">Unter-Emmentaler Digital</p>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-white/75">
-            Statischer Frontend-Prototyp fuer eine digitale Lokalzeitung mit
+            Statischer Frontend-Prototyp für eine digitale Lokalzeitung mit
             Premium-Artikeln, Paywall-Vorschau und Digitalabo-Idee.
           </p>
         </div>

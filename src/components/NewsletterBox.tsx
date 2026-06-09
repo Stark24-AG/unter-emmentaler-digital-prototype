@@ -7,7 +7,7 @@ export function NewsletterBox() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setMessage(
-      "Demo-Anmeldung erfasst. In der echten Version wuerde diese Adresse an ein Newsletter-System uebergeben.",
+      "Demo-Anmeldung erfasst. In der echten Version würde diese Adresse an ein Newsletter-System übergeben.",
     );
   }
 
@@ -18,7 +18,7 @@ export function NewsletterBox() {
           <p className="section-kicker">Newsletter</p>
           <h2 className="section-title mt-2">Das Wichtigste aus der Region</h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-ink/75">
-            Ein kompakter Ueberblick ueber neue Artikel, Premium-Dossiers und
+            Ein kompakter Überblick über neue Artikel, Premium-Dossiers und
             Termine aus Huttwil, Langenthal und der Region.
           </p>
         </div>

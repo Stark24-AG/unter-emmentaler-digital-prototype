@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArticleCard } from "../components/ArticleCard";
 import { ArticleGrid } from "../components/ArticleGrid";
+import { CurrentTopics } from "../components/CurrentTopics";
 import { NewsletterBox } from "../components/NewsletterBox";
 import { articles, getPremiumArticles, sortedArticles } from "../data/articles";
 
@@ -19,16 +20,38 @@ export function HomePage() {
   return (
     <>
       <section className="border-b border-line bg-paper">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[0.82fr_1.18fr] lg:px-8">
           <div className="flex flex-col justify-center">
+            <div className="mb-5 flex flex-wrap gap-2 text-xs font-bold uppercase text-ink/65">
+              <span className="border border-line bg-white px-3 py-1">
+                Demo-Ausgabe 09.06.2026
+              </span>
+              <span className="border border-line bg-white px-3 py-1">
+                Huttwil · Langenthal · Region
+              </span>
+            </div>
             <p className="section-kicker">Digitale Lokalzeitung</p>
             <h1 className="mt-3 font-serif text-4xl font-bold leading-tight text-ink sm:text-5xl">
               Unter-Emmentaler Digital
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-ink/75">
-              Ein Praesentationsprototyp fuer Premium-Artikel, Paywall,
-              Digitalabo und eine einfache Redaktionsidee.
+              Ein Präsentationsprototyp für Premium-Artikel, Paywall,
+              Digitalabo, aktuelle Themen und eine einfache Redaktionsidee.
             </p>
+            <div className="mt-6 grid gap-3 border-y border-line py-4 text-sm text-ink/75 sm:grid-cols-3">
+              <div>
+                <strong className="block text-2xl text-brand-700">20</strong>
+                fiktive Artikel
+              </div>
+              <div>
+                <strong className="block text-2xl text-brand-700">5</strong>
+                neue Fotomotive
+              </div>
+              <div>
+                <strong className="block text-2xl text-brand-700">40%</strong>
+                Premium-Demo
+              </div>
+            </div>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link className="btn btn-primary" to="/abo">
                 Digitalabo ansehen
@@ -41,6 +64,8 @@ export function HomePage() {
           <ArticleCard article={hero} variant="featured" />
         </div>
       </section>
+
+      <CurrentTopics />
 
       <section className="page-section">
         <div className="section-heading">
@@ -60,7 +85,7 @@ export function HomePage() {
           <div className="section-heading">
             <div>
               <p className="section-kicker text-premium-700">Premium</p>
-              <h2 className="section-title">Vertiefung fuer Abonnentinnen und Abonnenten</h2>
+              <h2 className="section-title">Vertiefung für Abonnentinnen und Abonnenten</h2>
             </div>
             <Link className="section-link" to="/abo">
               Digitalabo
@@ -77,7 +102,7 @@ export function HomePage() {
             <h2 className="section-title">Aus der Region</h2>
           </div>
           <Link className="section-link" to="/rubrik/region">
-            Region oeffnen
+            Region öffnen
           </Link>
         </div>
         <ArticleGrid articles={regionalArticles} />

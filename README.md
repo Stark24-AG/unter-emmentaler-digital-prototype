@@ -1,20 +1,20 @@
 # Unter-Emmentaler Digital Prototype
 
-Statischer Frontend-Prototyp fuer eine digitale Abo- und Paywall-Version der Schweizer Lokalzeitung **Unter-Emmentaler**.
+Statischer Frontend-Prototyp für eine digitale Abo- und Paywall-Version der Schweizer Lokalzeitung **Unter-Emmentaler**.
 
-Der Prototyp ist fuer eine Kundenpraesentation gedacht und kann direkt ueber GitHub Pages veroeffentlicht werden.
+Der Prototyp ist für eine Kundenpräsentation gedacht und kann direkt über GitHub Pages veröffentlicht werden.
 
 ## Was der Prototyp zeigt
 
 - Startseite mit Artikel-Hierarchie, Rubriken und Newsletter-Box
 - Artikelliste mit Suche, Kategorie-Filter und Premium-Badges
-- Rubrikseiten fuer Huttwil, Langenthal, Region, Sport, Kultur, Wirtschaft, Politik und Meinung
+- Rubrikseiten für Huttwil, Langenthal, Region, Sport, Kultur, Wirtschaft, Politik und Meinung
 - Gratis-Artikel mit komplett sichtbarem Text
 - Premium-Artikel mit Vorschau und Paywall-Box
 - Abo-Seite mit Monatsabo, Jahresabo und Print + Digital
 - Login-, Registrieren- und Konto-Demo
-- einfache Admin-Demo fuer Redaktion und Artikel-Erfassung
-- Projektseite mit Erklaerung fuer Kundinnen und Kunden
+- einfache Admin-Demo für Redaktion und Artikel-Erfassung
+- Projektseite mit Erklärung für Kundinnen und Kunden
 
 ## Bewusst nicht enthalten
 
@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-Danach die lokale URL aus dem Terminal oeffnen, typischerweise:
+Danach die lokale URL aus dem Terminal öffnen, typischerweise:
 
 ```text
 http://localhost:5173/
@@ -64,7 +64,7 @@ Alle Demo-Artikel liegen in:
 src/data/articles.ts
 ```
 
-Dort koennen Titel, Lead, Kategorie, Premium-Status, Autor, Datum und Artikeltext angepasst werden. Premium-Artikel zeigen im Prototyp nur die ersten zwei Absaetze und danach die Paywall-Box.
+Dort können Titel, Lead, Kategorie, Premium-Status, Autor, Datum und Artikeltext angepasst werden. Premium-Artikel zeigen im Prototyp nur die ersten zwei Absätze und danach die Paywall-Box.
 
 ## GitHub Repository erstellen und Code pushen
 
@@ -88,13 +88,13 @@ git push -u origin main
 
 ## GitHub Pages aktivieren
 
-1. GitHub Repository oeffnen
-2. `Settings` oeffnen
-3. `Pages` waehlen
-4. Bei `Source` die Option `GitHub Actions` auswaehlen
+1. GitHub Repository öffnen
+2. `Settings` öffnen
+3. `Pages` wählen
+4. Bei `Source` die Option `GitHub Actions` auswählen
 5. Auf `main` pushen
 6. Workflow `Deploy to GitHub Pages` abwarten
-7. Den oeffentlichen Link im Bereich `Settings > Pages` kopieren
+7. Den öffentlichen Link im Bereich `Settings > Pages` kopieren
 
 Der Link hat normalerweise diese Form:
 
@@ -104,7 +104,7 @@ https://DEIN-BENUTZERNAME.github.io/unter-emmentaler-digital-prototype/
 
 ## Warum HashRouter verwendet wird
 
-GitHub Pages liefert statische Dateien aus und leitet Unterseiten wie `/artikel/example` nicht automatisch an die SPA zurueck. Darum verwendet dieses Projekt `HashRouter`. URLs sehen dadurch so aus:
+GitHub Pages liefert statische Dateien aus und leitet Unterseiten wie `/artikel/example` nicht automatisch an die SPA zurück. Darum verwendet dieses Projekt `HashRouter`. URLs sehen dadurch so aus:
 
 ```text
 https://DEIN-BENUTZERNAME.github.io/unter-emmentaler-digital-prototype/#/artikel/beispiel
@@ -112,15 +112,15 @@ https://DEIN-BENUTZERNAME.github.io/unter-emmentaler-digital-prototype/#/artikel
 
 Das funktioniert auf GitHub Pages ohne Server-Konfiguration.
 
-## Spaetere echte Umsetzung
+## Spätere echte Umsetzung
 
-Fuer eine produktive Version waeren zusaetzlich noetig:
+Für eine produktive Version wären zusätzlich nötig:
 
-- Backend oder CMS-Anbindung fuer Artikel
+- Backend oder CMS-Anbindung für Artikel
 - Authentifizierung und Benutzerkonten
 - Stripe Checkout oder ein anderes Zahlungssystem
-- serverseitige Paywall-Pruefung
-- Abo-Status, Rechnungen und Kuendigungsprozess
-- Datenschutz, Impressum und rechtliche Pruefung
+- serverseitige Paywall-Prüfung
+- Abo-Status, Rechnungen und Kündigungsprozess
+- Datenschutz, Impressum und rechtliche Prüfung
 - Artikelmigration oder Import aus dem bestehenden System
 - Hosting, Monitoring, Backups und Wartung

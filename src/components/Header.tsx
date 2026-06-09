@@ -46,7 +46,7 @@ export function Header() {
           aria-controls="mobile-navigation"
           onClick={() => setOpen((value) => !value)}
         >
-          Menue
+          Menü
         </button>
       </div>
 

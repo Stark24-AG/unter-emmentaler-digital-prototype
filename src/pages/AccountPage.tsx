@@ -30,7 +30,7 @@ export function AccountPage() {
             type="button"
             onClick={() =>
               setMessage(
-                "Dies ist ein Prototyp. In der echten Version wuerde hier die Stripe-Aboverwaltung geoeffnet.",
+                "Dies ist ein Prototyp. In der echten Version würde hier die Stripe-Aboverwaltung geöffnet.",
               )
             }
           >
@@ -40,8 +40,8 @@ export function AccountPage() {
       </div>
       <div className="mt-5">
         <DemoNotice>
-          In der echten Version waeren hier Stripe-Abo-Status, Rechnungen und
-          Kuendigung verknuepft.
+          In der echten Version wären hier Stripe-Abo-Status, Rechnungen und
+          Kündigung verknuepft.
         </DemoNotice>
       </div>
       <DemoToast message={message} onClose={() => setMessage("")} />

@@ -9,7 +9,7 @@ export function AdminPage() {
       <div className="section-heading">
         <div>
           <p className="section-kicker">Admin-Demo</p>
-          <h1 className="section-title">Redaktionsoberflaeche</h1>
+          <h1 className="section-title">Redaktionsoberfläche</h1>
         </div>
         <Link className="btn btn-primary" to="/admin/artikel-neu">
           Neuer Artikel
@@ -17,7 +17,7 @@ export function AdminPage() {
       </div>
       <div className="mt-6">
         <DemoNotice>
-          In der echten Version koennten Redakteure hier Artikel erfassen,
+          In der echten Version könnten Redakteure hier Artikel erfassen,
           bearbeiten und als Premium markieren.
         </DemoNotice>
       </div>

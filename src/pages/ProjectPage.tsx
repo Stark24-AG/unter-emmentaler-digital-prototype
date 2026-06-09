@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const realBuildNeeds = [
   "Zugriff auf aktuelles CMS und Hosting",
-  "Klaerung des heutigen Artikel-Workflows",
-  "Stripe-Konto und Zahlungsablaeufe",
-  "Datenschutz und Impressum pruefen",
+  "Klärung des heutigen Artikel-Workflows",
+  "Stripe-Konto und Zahlungsabläufe",
+  "Datenschutz und Impressum prüfen",
   "Artikelimport und Archivstruktur planen",
-  "Hosting, Wartung und Support klaeren",
+  "Hosting, Wartung und Support klären",
 ];
 
 export function ProjectPage() {
@@ -17,23 +17,23 @@ export function ProjectPage() {
       <div className="article-content mt-7">
         <p>
           Diese statische Demo zeigt, wie der Unter-Emmentaler digitaler auftreten
-          koennte: mit klarer Artikel-Hierarchie, Premium-Kennzeichnung,
+          könnte: mit klarer Artikel-Hierarchie, Premium-Kennzeichnung,
           Paywall-Vorschau, Digitalabo-Seite und einer einfachen Admin-Idee.
         </p>
         <p>
           Es sind keine echten Zahlungen aktiv. Login, Konto und Adminbereich sind
-          reine Benutzeroberflaechen ohne Backend, Datenbank oder Webhooks.
+          reine Benutzeroberflächen ohne Backend, Datenbank oder Webhooks.
         </p>
         <p>
-          Fuer eine echte Umsetzung muesste zuerst geprueft werden, wie die
+          Für eine echte Umsetzung müsste zuerst geprüft werden, wie die
           bestehende Website technisch aufgebaut ist und wie Artikel heute
-          erfasst, freigegeben und veroeffentlicht werden.
+          erfasst, freigegeben und veröffentlicht werden.
         </p>
       </div>
 
       <section className="mt-10 border-y border-line bg-white py-6">
         <h2 className="font-serif text-2xl font-bold text-ink">
-          Fuer eine echte Umsetzung noetig
+          Für eine echte Umsetzung nötig
         </h2>
         <ul className="mt-5 grid gap-3 sm:grid-cols-2">
           {realBuildNeeds.map((item) => (

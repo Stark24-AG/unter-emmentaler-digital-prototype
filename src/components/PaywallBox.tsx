@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function PaywallBox() {
   const benefits = [
     "Alle Premium-Artikel freischalten",
-    "Jederzeit kuendbar",
+    "Jederzeit kündbar",
     "Sicher bezahlen",
     "Lokaljournalismus unterstuetzen",
   ];
@@ -16,7 +16,7 @@ export function PaywallBox() {
       </h2>
       <p className="mt-4 leading-7 text-ink/80">
         Erhalten Sie Zugriff auf alle Premium-Artikel des Unter-Emmentalers und
-        unterstuetzen Sie unabhaengigen Lokaljournalismus aus der Region.
+        unterstuetzen Sie unabhängigen Lokaljournalismus aus der Region.
       </p>
       <ul className="mt-5 grid gap-2 text-sm font-semibold text-ink sm:grid-cols-2">
         {benefits.map((benefit) => (
@@ -37,8 +37,8 @@ export function PaywallBox() {
         </Link>
       </div>
       <p className="mt-5 text-xs leading-5 text-ink/65">
-        Im echten System wuerde der vollstaendige Artikel serverseitig
-        geschuetzt.
+        Im echten System würde der vollständige Artikel serverseitig
+        geschützt.
       </p>
     </aside>
   );

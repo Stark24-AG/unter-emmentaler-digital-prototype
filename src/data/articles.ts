@@ -1,7 +1,12 @@
-import heroImage from "../assets/local-news-hero.png";
+import heroImage from "../assets/local-news-hero.webp";
+import cultureImage from "../assets/photo-culture.webp";
+import hockeyImage from "../assets/photo-hockey.webp";
+import irrigationImage from "../assets/photo-irrigation.webp";
+import marketImage from "../assets/photo-market.webp";
+import schoolGardenImage from "../assets/photo-school-garden.webp";
 import type { Category } from "../lib/categories";
 
-export type ArticleStatus = "Entwurf" | "Bereit" | "Veroeffentlicht";
+export type ArticleStatus = "Entwurf" | "Bereit" | "Veröffentlicht";
 
 export interface Article {
   slug: string;
@@ -22,27 +27,27 @@ export interface Article {
 
 const sharedImage = heroImage;
 
-export const articles: Article[] = [
+const demoArticles: Article[] = [
   {
     slug: "begegnungszone-am-marktplatz-huttwil",
     title: "Neue Begegnungszone soll den Marktplatz beleben",
-    subtitle: "Huttwil diskutiert ueber Tempo, Aufenthaltsqualitaet und Gewerbeverkehr.",
+    subtitle: "Huttwil diskutiert über Tempo, Aufenthaltsqualität und Gewerbeverkehr.",
     lead:
-      "Der Gemeinderat legt einen Vorschlag vor, der den Marktplatz sicherer machen und gleichzeitig die Erreichbarkeit der Geschaefte erhalten soll.",
+      "Der Gemeinderat legt einen Vorschlag vor, der den Marktplatz sicherer machen und gleichzeitig die Erreichbarkeit der Geschäfte erhalten soll.",
     category: "Huttwil",
     author: "Nora Gerber",
     date: "2026-06-08",
     readingTime: "5 Min.",
     premium: true,
     featured: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktive Schweizer Dorfstrasse als Symbolbild fuer Lokaljournalismus",
+    imageAlt: "Fiktive Schweizer Dorfstrasse als Symbolbild für Lokaljournalismus",
     paragraphs: [
-      "Der Marktplatz in Huttwil ist seit Jahren ein Ort, an dem sich Einkaufsverkehr, Fussgaengerinnen, Velofahrer und Lieferdienste kreuzen. Nun will der Gemeinderat die Situation neu ordnen. Vorgesehen ist eine Begegnungszone mit klareren Querungen, mehr Sitzgelegenheiten und einer ruhigeren Fuehrung des Verkehrs.",
-      "Gewerbetreibende begruessen, dass die Parkplaetze nicht ersatzlos verschwinden sollen. Gleichzeitig fordern sie eine Bauplanung, die den Ladenbetrieb nicht ueber Monate belastet. Die Gemeinde spricht von einer Etappierung, die noch mit den Betroffenen abgestimmt wird.",
-      "In der Mitwirkung sollen auch Fragen zur Gestaltung geklaert werden. Zur Diskussion stehen Baumpflanzungen, mobile Gruenelemente und ein einheitliches Beschilderungskonzept. Besonders wichtig ist dem Gemeinderat, dass der Platz nicht nur schoener wirkt, sondern im Alltag einfacher funktioniert.",
-      "Bis Ende Sommer werden Rueckmeldungen gesammelt. Danach entscheidet der Gemeinderat, ob ein detailliertes Bauprojekt ausgearbeitet wird. Eine Umsetzung waere fruehestens im kommenden Jahr moeglich.",
+      "Der Marktplatz in Huttwil ist seit Jahren ein Ort, an dem sich Einkaufsverkehr, Fussgängerinnen, Velofahrer und Lieferdienste kreuzen. Nun will der Gemeinderat die Situation neu ordnen. Vorgesehen ist eine Begegnungszone mit klareren Querungen, mehr Sitzgelegenheiten und einer ruhigeren Führung des Verkehrs.",
+      "Gewerbetreibende begrüssen, dass die Parkplätze nicht ersatzlos verschwinden sollen. Gleichzeitig fordern sie eine Bauplanung, die den Ladenbetrieb nicht über Monate belastet. Die Gemeinde spricht von einer Etappierung, die noch mit den Betroffenen abgestimmt wird.",
+      "In der Mitwirkung sollen auch Fragen zur Gestaltung geklärt werden. Zur Diskussion stehen Baumpflanzungen, mobile Grünelemente und ein einheitliches Beschilderungskonzept. Besonders wichtig ist dem Gemeinderat, dass der Platz nicht nur schöner wirkt, sondern im Alltag einfacher funktioniert.",
+      "Bis Ende Sommer werden Rückmeldungen gesammelt. Danach entscheidet der Gemeinderat, ob ein detailliertes Bauprojekt ausgearbeitet wird. Eine Umsetzung wäre frühestens im kommenden Jahr möglich.",
     ],
   },
   {
@@ -56,59 +61,59 @@ export const articles: Article[] = [
     date: "2026-06-07",
     readingTime: "4 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer regionalen Vereinssport",
+    imageAlt: "Fiktives Symbolbild für regionalen Vereinssport",
     paragraphs: [
-      "Auf dem Trainingsplatz herrscht bereits wieder Betrieb. Die Juniorinnen des SC Huttwil arbeiten an Passspiel, Athletik und Spielaufbau. Der neue Staff will die Trainingswoche klarer strukturieren und gleichzeitig Raum fuer Freude am Spiel lassen.",
-      "Besonders erfreulich ist die Breite des Kaders. Mehrere Spielerinnen aus der Region haben sich fuer ein Probetraining angemeldet. Der Verein sieht darin ein Zeichen, dass der Frauen- und Maedchensport lokal weiter an Bedeutung gewinnt.",
-      "Das erste Vorbereitungsspiel ist fuer Ende Juni vorgesehen. Bis dahin stehen Grundlagen im Zentrum: saubere Ballannahme, schnelle Entscheidungen und eine stabile defensive Ordnung.",
+      "Auf dem Trainingsplatz herrscht bereits wieder Betrieb. Die Juniorinnen des SC Huttwil arbeiten an Passspiel, Athletik und Spielaufbau. Der neue Staff will die Trainingswoche klarer strukturieren und gleichzeitig Raum für Freude am Spiel lassen.",
+      "Besonders erfreulich ist die Breite des Kaders. Mehrere Spielerinnen aus der Region haben sich für ein Probetraining angemeldet. Der Verein sieht darin ein Zeichen, dass der Frauen- und Mädchensport lokal weiter an Bedeutung gewinnt.",
+      "Das erste Vorbereitungsspiel ist für Ende Juni vorgesehen. Bis dahin stehen Grundlagen im Zentrum: saubere Ballannahme, schnelle Entscheidungen und eine stabile defensive Ordnung.",
     ],
   },
   {
     slug: "langenthal-prueft-neues-schulraumkonzept",
-    title: "Langenthal prueft neues Schulraumkonzept",
+    title: "Langenthal prüft neues Schulraumkonzept",
     subtitle: "Wachsende Klassen und Tagesstrukturen stellen die Stadt vor Entscheidungen.",
     lead:
-      "Die Stadt Langenthal analysiert, wie Schulraeume, Betreuung und Spezialzimmer in den naechsten Jahren besser zusammenspielen koennen.",
+      "Die Stadt Langenthal analysiert, wie Schulräume, Betreuung und Spezialzimmer in den nächsten Jahren besser zusammenspielen können.",
     category: "Langenthal",
-    author: "Martina Koenig",
+    author: "Martina König",
     date: "2026-06-06",
     readingTime: "6 Min.",
     premium: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Bildung und Gemeindeentwicklung",
+    imageAlt: "Fiktives Symbolbild für Bildung und Gemeindeentwicklung",
     paragraphs: [
-      "Langenthal waechst nicht sprunghaft, aber stetig. Genau diese Entwicklung bringt die Schulplanung unter Druck. Klassenzimmer, Gruppenraeume und Tagesstrukturen muessen kuenftig flexibler genutzt werden koennen, ohne dass der Unterricht staendig improvisiert werden muss.",
-      "Die Stadt laesst deshalb verschiedene Varianten pruefen. Im Fokus stehen bauliche Anpassungen, eine bessere Verteilung der Spezialraeume und die Frage, wie die Betreuung am Mittag organisatorisch entlastet werden kann.",
-      "Elternvertreterinnen weisen darauf hin, dass die Wege fuer juengere Kinder kurz bleiben muessen. Lehrpersonen wiederum betonen, dass moderne Lernformen mehr kleine Raeume brauchen. Die Stadt will beide Anliegen in der Planung beruecksichtigen.",
-      "Ein Entscheid ist noch nicht gefallen. Bis im Herbst soll ein Bericht vorliegen, der Kosten, Dringlichkeit und moegliche Etappen aufzeigt.",
+      "Langenthal wächst nicht sprunghaft, aber stetig. Genau diese Entwicklung bringt die Schulplanung unter Druck. Klassenzimmer, Gruppenräume und Tagesstrukturen müssen künftig flexibler genutzt werden können, ohne dass der Unterricht ständig improvisiert werden muss.",
+      "Die Stadt lässt deshalb verschiedene Varianten prüfen. Im Fokus stehen bauliche Anpassungen, eine bessere Verteilung der Spezialräume und die Frage, wie die Betreuung am Mittag organisatorisch entlastet werden kann.",
+      "Elternvertreterinnen weisen darauf hin, dass die Wege für jüngere Kinder kurz bleiben müssen. Lehrpersonen wiederum betonen, dass moderne Lernformen mehr kleine Räume brauchen. Die Stadt will beide Anliegen in der Planung berücksichtigen.",
+      "Ein Entscheid ist noch nicht gefallen. Bis im Herbst soll ein Bericht vorliegen, der Kosten, Dringlichkeit und mögliche Etappen aufzeigt.",
     ],
   },
   {
     slug: "feuerwehr-uebt-den-ernstfall-im-dorfzentrum",
-    title: "Feuerwehr uebt den Ernstfall im Dorfzentrum",
+    title: "Feuerwehr übt den Ernstfall im Dorfzentrum",
     subtitle: "Mehrere Korps trainierten die Zusammenarbeit bei einem komplexen Einsatz.",
     lead:
-      "Eine gross angelegte Uebung zeigte, wie wichtig klare Kommunikation und eingespielte Ablaeufe bei einem Brand im Zentrum sind.",
+      "Eine gross angelegte Übung zeigte, wie wichtig klare Kommunikation und eingespielte Abläufe bei einem Brand im Zentrum sind.",
     category: "Region",
     author: "Sandro Wyss",
     date: "2026-06-05",
     readingTime: "3 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer regionale Sicherheitsarbeit",
+    imageAlt: "Fiktives Symbolbild für regionale Sicherheitsarbeit",
     paragraphs: [
-      "Rauch, gesperrte Zufahrten und mehrere vermisste Personen: Das Szenario der Feuerwehruebung war bewusst anspruchsvoll gewaehlt. Die Einsatzkraefte mussten Wasserbezuege aufbauen, Personen retten und den Verkehr umleiten.",
-      "Nach der Uebung zogen die Verantwortlichen ein positives Fazit. Besonders die Kommunikation zwischen Einsatzleitung, Atemschutztrupps und Verkehrsdienst habe gut funktioniert. Einzelne Details sollen in den kommenden Wochen nachbesprochen werden.",
-      "Auch Zuschauerinnen und Zuschauer nutzten die Gelegenheit, sich ueber die Arbeit der Feuerwehr zu informieren. Fuer das Korps ist solche Sichtbarkeit wichtig, weil neue Mitglieder gesucht werden.",
+      "Rauch, gesperrte Zufahrten und mehrere vermisste Personen: Das Szenario der Feuerwehrübung war bewusst anspruchsvoll gewählt. Die Einsatzkräfte mussten Wasserbezüge aufbauen, Personen retten und den Verkehr umleiten.",
+      "Nach der Übung zogen die Verantwortlichen ein positives Fazit. Besonders die Kommunikation zwischen Einsatzleitung, Atemschutztrupps und Verkehrsdienst habe gut funktioniert. Einzelne Details sollen in den kommenden Wochen nachbesprochen werden.",
+      "Auch Zuschauerinnen und Zuschauer nutzten die Gelegenheit, sich über die Arbeit der Feuerwehr zu informieren. Für das Korps ist solche Sichtbarkeit wichtig, weil neue Mitglieder gesucht werden.",
     ],
   },
   {
     slug: "sommerbuehne-bringt-musik-auf-den-dorfplatz",
-    title: "Sommerbuehne bringt Musik auf den Dorfplatz",
+    title: "Sommerbühne bringt Musik auf den Dorfplatz",
     subtitle: "Ein neues Kulturformat setzt auf lokale Bands und kurze Wege.",
     lead:
       "Mit einer kleinen Open-Air-Reihe sollen Musik, Gastronomie und Begegnung im Dorfzentrum zusammenfinden.",
@@ -117,61 +122,61 @@ export const articles: Article[] = [
     date: "2026-06-04",
     readingTime: "5 Min.",
     premium: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer lokale Kulturveranstaltungen",
+    imageAlt: "Fiktives Symbolbild für lokale Kulturveranstaltungen",
     paragraphs: [
-      "Die Sommerbuehne startet mit drei Abenden im Juli. Das Programm reicht von akustischem Folk ueber Blasmusik in kleiner Besetzung bis zu einem jungen Chorprojekt. Der Eintritt bleibt frei, die Finanzierung erfolgt ueber Sponsoren und Kollekte.",
-      "Die Organisierenden wollen ein Format schaffen, das ohne grosse Infrastruktur auskommt. Eine mobile Buehne, einfache Beleuchtung und kurze Umbaupausen sollen genuegen. Entscheidend sei, dass die Menschen unkompliziert vorbeikommen koennen.",
-      "Fuer lokale Kulturschaffende ist die Reihe eine willkommene Plattform. Gerade kleinere Formationen finden selten Auftrittsorte, die zwischen Vereinsabend und grossem Festival liegen.",
-      "Sollte das Pilotprojekt funktionieren, koennte die Sommerbuehne im naechsten Jahr erweitert werden. Denkbar sind Lesungen, Kinderkonzerte und ein Abend fuer Nachwuchsbands.",
+      "Die Sommerbühne startet mit drei Abenden im Juli. Das Programm reicht von akustischem Folk über Blasmusik in kleiner Besetzung bis zu einem jungen Chorprojekt. Der Eintritt bleibt frei, die Finanzierung erfolgt über Sponsoren und Kollekte.",
+      "Die Organisierenden wollen ein Format schaffen, das ohne grosse Infrastruktur auskommt. Eine mobile Buehne, einfache Beleuchtung und kurze Umbaupausen sollen genuegen. Entscheidend sei, dass die Menschen unkompliziert vorbeikommen können.",
+      "Für lokale Kulturschaffende ist die Reihe eine willkommene Plattform. Gerade kleinere Formationen finden selten Auftrittsorte, die zwischen Vereinsabend und grossem Festival liegen.",
+      "Sollte das Pilotprojekt funktionieren, könnte die Sommerbühne im nächsten Jahr erweitert werden. Denkbar sind Lesungen, Kinderkonzerte und ein Abend für Nachwuchsbands.",
     ],
   },
   {
     slug: "baeckerei-investiert-in-neuen-holzofen",
-    title: "Baeckerei investiert in neuen Holzofen",
+    title: "Bäckerei investiert in neuen Holzofen",
     subtitle: "Ein Familienbetrieb verbindet Handwerk, Energiefragen und regionale Produkte.",
     lead:
-      "Die neue Anlage soll effizienter arbeiten und dem Betrieb mehr Spielraum fuer Brote mit langer Teigfuehrung geben.",
+      "Die neue Anlage soll effizienter arbeiten und dem Betrieb mehr Spielraum für Brote mit langer Teigführung geben.",
     category: "Wirtschaft",
     author: "Fabian Moser",
     date: "2026-06-03",
     readingTime: "4 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer lokales Gewerbe",
+    imageAlt: "Fiktives Symbolbild für lokales Gewerbe",
     paragraphs: [
-      "In der Backstube riecht es nach Sauerteig und frischem Holz. Der neue Ofen ist fuer die Baeckerei eine groessere Investition, soll aber langfristig Energie sparen und die Qualitaet stabilisieren.",
-      "Der Betrieb setzt vermehrt auf Mehl aus der Region. Fuer die Kundschaft soll sichtbar werden, welche Wege die Zutaten zuruecklegen und weshalb handwerkliche Produkte ihren Preis haben.",
-      "Neben klassischen Broten plant die Baeckerei neue Wochenangebote. Dabei sollen auch kleinere Mengen moeglich sein, damit nicht zu viel Ware uebrig bleibt.",
+      "In der Backstube riecht es nach Sauerteig und frischem Holz. Der neue Ofen ist für die Bäckerei eine groessere Investition, soll aber langfristig Energie sparen und die Qualität stabilisieren.",
+      "Der Betrieb setzt vermehrt auf Mehl aus der Region. Für die Kundschaft soll sichtbar werden, welche Wege die Zutaten zurücklegen und weshalb handwerkliche Produkte ihren Preis haben.",
+      "Neben klassischen Broten plant die Bäckerei neue Wochenangebote. Dabei sollen auch kleinere Mengen möglich sein, damit nicht zu viel Ware übrig bleibt.",
     ],
   },
   {
     slug: "gemeinderat-debattiert-ueber-tempo-30",
-    title: "Gemeinderat debattiert ueber Tempo 30 vor Schulwegen",
-    subtitle: "Sicherheit, Laerm und Verkehrsfunktion muessen abgewogen werden.",
+    title: "Gemeinderat debattiert über Tempo 30 vor Schulwegen",
+    subtitle: "Sicherheit, Lärm und Verkehrsfunktion müssen abgewogen werden.",
     lead:
-      "Eine Motion verlangt tiefere Geschwindigkeiten auf mehreren Abschnitten. Die Gemeinde will zuerst eine fachliche Pruefung.",
+      "Eine Motion verlangt tiefere Geschwindigkeiten auf mehreren Abschnitten. Die Gemeinde will zuerst eine fachliche Prüfung.",
     category: "Politik",
     author: "Nora Gerber",
     date: "2026-06-02",
     readingTime: "6 Min.",
     premium: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer kommunale Politik",
+    imageAlt: "Fiktives Symbolbild für kommunale Politik",
     paragraphs: [
-      "Tempo 30 ist in vielen Gemeinden ein wiederkehrendes Thema. Auch hier geht es um mehr Sicherheit auf Schulwegen, weniger Laerm in Wohnquartieren und die Frage, wie stark der Durchgangsverkehr eingeschraenkt werden darf.",
-      "Im Gemeinderat zeigten sich unterschiedliche Haltungen. Einige Mitglieder sehen eine klare Notwendigkeit, andere warnen vor punktuellen Loesungen ohne Gesamtbild. Die Verwaltung soll nun Grundlagen zu Verkehrsaufkommen, Unfallstellen und baulichen Moeglichkeiten sammeln.",
-      "Eltern aus betroffenen Quartieren begruessen den Schritt. Sie berichten von unuebersichtlichen Situationen am Morgen und am Mittag. Gleichzeitig betonen Vertreter des Gewerbes, dass Zufahrten fuer Lieferverkehr weiterhin funktionieren muessen.",
-      "Ein Entscheid ueber konkrete Abschnitte wird fruehestens nach der Sommerpause erwartet.",
+      "Tempo 30 ist in vielen Gemeinden ein wiederkehrendes Thema. Auch hier geht es um mehr Sicherheit auf Schulwegen, weniger Lärm in Wohnquartieren und die Frage, wie stark der Durchgangsverkehr eingeschränkt werden darf.",
+      "Im Gemeinderat zeigten sich unterschiedliche Haltungen. Einige Mitglieder sehen eine klare Notwendigkeit, andere warnen vor punktuellen Lösungen ohne Gesamtbild. Die Verwaltung soll nun Grundlagen zu Verkehrsaufkommen, Unfallstellen und baulichen Möglichkeiten sammeln.",
+      "Eltern aus betroffenen Quartieren begrüssen den Schritt. Sie berichten von unübersichtlichen Situationen am Morgen und am Mittag. Gleichzeitig betonen Vertreter des Gewerbes, dass Zufahrten für Lieferverkehr weiterhin funktionieren müssen.",
+      "Ein Entscheid über konkrete Abschnitte wird frühestens nach der Sommerpause erwartet.",
     ],
   },
   {
     slug: "lokaljournalismus-braucht-naehe-und-distanz",
-    title: "Lokaljournalismus braucht Naehe und Distanz",
-    subtitle: "Ein Kommentar zur Rolle der Zeitung in kleinen Raeumen.",
+    title: "Lokaljournalismus braucht Nähe und Distanz",
+    subtitle: "Ein Kommentar zur Rolle der Zeitung in kleinen Räumen.",
     lead:
       "Wer lokal berichtet, kennt viele Beteiligte persoenlich. Gerade deshalb braucht es klare Regeln und transparente Einordnung.",
     category: "Meinung",
@@ -179,58 +184,58 @@ export const articles: Article[] = [
     date: "2026-06-01",
     readingTime: "3 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer eine Redaktion",
+    imageAlt: "Fiktives Symbolbild für eine Redaktion",
     paragraphs: [
-      "Lokaler Journalismus lebt von Naehe. Ohne Vertrauen, Anrufe, Hinweise und Gespraeche am Rand einer Versammlung wuerden viele Geschichten gar nie sichtbar. Diese Naehe ist eine Staerke.",
-      "Sie ist aber auch eine Verpflichtung. Wer ueber Vereine, Gemeinden und Unternehmen berichtet, muss Interessen offenlegen, sauber nachfragen und Kritik aushalten. Distanz entsteht nicht durch Abwesenheit, sondern durch klare Arbeitsweise.",
-      "Eine digitale Zeitung kann diese Arbeit sichtbarer machen. Sie kann Quellen erklaeren, Dossiers buendeln und Rueckmeldungen schneller aufnehmen. Entscheidend bleibt, dass die journalistische Haltung erkennbar ist.",
+      "Lokaler Journalismus lebt von Nähe. Ohne Vertrauen, Anrufe, Hinweise und Gespräche am Rand einer Versammlung würden viele Geschichten gar nie sichtbar. Diese Nähe ist eine Stärke.",
+      "Sie ist aber auch eine Verpflichtung. Wer über Vereine, Gemeinden und Unternehmen berichtet, muss Interessen offenlegen, sauber nachfragen und Kritik aushalten. Distanz entsteht nicht durch Abwesenheit, sondern durch klare Arbeitsweise.",
+      "Eine digitale Zeitung kann diese Arbeit sichtbarer machen. Sie kann Quellen erklären, Dossiers buendeln und Rückmeldungen schneller aufnehmen. Entscheidend bleibt, dass die journalistische Haltung erkennbar ist.",
     ],
   },
   {
     slug: "jugendprojekt-oeffnet-werkstatt-am-samstag",
-    title: "Jugendprojekt oeffnet Werkstatt am Samstag",
-    subtitle: "Junge Menschen reparieren Velos, bauen Moebel und lernen Verantwortung.",
+    title: "Jugendprojekt öffnet Werkstatt am Samstag",
+    subtitle: "Junge Menschen reparieren Velos, bauen Möbel und lernen Verantwortung.",
     lead:
-      "Die offene Werkstatt zeigt, wie praktische Arbeit, Freizeit und soziale Begleitung verbunden werden koennen.",
+      "Die offene Werkstatt zeigt, wie praktische Arbeit, Freizeit und soziale Begleitung verbunden werden können.",
     category: "Huttwil",
     author: "Lea Christen",
     date: "2026-05-31",
     readingTime: "4 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer ein Jugendprojekt",
+    imageAlt: "Fiktives Symbolbild für ein Jugendprojekt",
     paragraphs: [
-      "Am Samstag stehen die Werkstatttueren offen. Besucherinnen und Besucher koennen sehen, wie alte Velos wieder fahrtuechtig gemacht und einfache Holzmoebel gebaut werden. Das Projekt richtet sich an Jugendliche, die gerne praktisch arbeiten.",
-      "Begleitet werden sie von Fachpersonen und Freiwilligen. Neben handwerklichen Faehigkeiten geht es um Puenktlichkeit, Teamarbeit und den Mut, eigene Ideen auszuprobieren.",
-      "Die Organisierenden hoffen, dass aus dem Aktionstag neue Kontakte entstehen. Gesucht werden Materialspenden, Mentoren und Betriebe, die Schnuppermoeglichkeiten anbieten.",
+      "Am Samstag stehen die Werkstatttüren offen. Besucherinnen und Besucher können sehen, wie alte Velos wieder fahrtüchtig gemacht und einfache Holzmoebel gebaut werden. Das Projekt richtet sich an Jugendliche, die gerne praktisch arbeiten.",
+      "Begleitet werden sie von Fachpersonen und Freiwilligen. Neben handwerklichen Fähigkeiten geht es um Pünktlichkeit, Teamarbeit und den Mut, eigene Ideen auszuprobieren.",
+      "Die Organisierenden hoffen, dass aus dem Aktionstag neue Kontakte entstehen. Gesucht werden Materialspenden, Mentoren und Betriebe, die Schnuppermöglichkeiten anbieten.",
     ],
   },
   {
     slug: "stadtpark-erhaelt-mehr-schattenplaetze",
-    title: "Stadtpark erhaelt mehr Schattenplaetze",
-    subtitle: "Langenthal reagiert auf heisse Sommer und veraenderte Nutzung.",
+    title: "Stadtpark erhält mehr Schattenplätze",
+    subtitle: "Langenthal reagiert auf heisse Sommer und veränderte Nutzung.",
     lead:
       "Neue Baumpflanzungen und Trinkwasserstellen sollen den Park im Alltag angenehmer machen.",
     category: "Langenthal",
-    author: "Martina Koenig",
+    author: "Martina König",
     date: "2026-05-30",
     readingTime: "4 Min.",
     premium: false,
     status: "Bereit",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer einen Stadtpark",
+    imageAlt: "Fiktives Symbolbild für einen Stadtpark",
     paragraphs: [
-      "Der Stadtpark wird haeufiger und laenger genutzt als frueher. Familien, Seniorinnen, Schueler und Berufstaetige teilen sich die Flaechen ueber den ganzen Tag. Mit den heisseren Sommern steigt der Bedarf an Schatten.",
-      "Die Stadt plant deshalb zusaetzliche Baumpflanzungen und zwei Trinkwasserstellen. Die bestehenden Wege bleiben erhalten, einzelne Sitzbereiche werden neu angeordnet.",
-      "Die Arbeiten sollen ausserhalb der Hauptsaison ausgefuehrt werden. Fuer Veranstaltungen im Park wird ein provisorisches Konzept erstellt.",
+      "Der Stadtpark wird häufiger und länger genutzt als früher. Familien, Seniorinnen, Schüler und Berufstätige teilen sich die Flächen über den ganzen Tag. Mit den heisseren Sommern steigt der Bedarf an Schatten.",
+      "Die Stadt plant deshalb zusätzliche Baumpflanzungen und zwei Trinkwasserstellen. Die bestehenden Wege bleiben erhalten, einzelne Sitzbereiche werden neu angeordnet.",
+      "Die Arbeiten sollen ausserhalb der Hauptsaison ausgeführt werden. Für Veranstaltungen im Park wird ein provisorisches Konzept erstellt.",
     ],
   },
   {
     slug: "landwirte-testen-neue-bewaesserung",
-    title: "Landwirte testen neue Bewaesserung auf kleinen Parzellen",
+    title: "Landwirte testen neue Bewässerung auf kleinen Parzellen",
     subtitle: "Ein Pilotprojekt untersucht, wie Wasser gezielter eingesetzt werden kann.",
     lead:
       "Mehrere Betriebe aus der Region beteiligen sich an einem Versuch mit Sensoren, Messdaten und einfachen Entscheidungsregeln.",
@@ -239,20 +244,20 @@ export const articles: Article[] = [
     date: "2026-05-29",
     readingTime: "6 Min.",
     premium: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Landwirtschaft in der Region",
+    imageAlt: "Fiktives Symbolbild für Landwirtschaft in der Region",
     paragraphs: [
       "Trockenperioden treffen nicht alle Kulturen gleich. In einem Pilotprojekt messen Betriebe deshalb Bodenfeuchte, Temperatur und Niederschlag auf kleinen Parzellen. Ziel ist, Wasser nur dann einzusetzen, wenn es den Pflanzen wirklich hilft.",
-      "Die Technik ist bewusst einfach gehalten. Sensoren liefern Richtwerte, die Entscheide bleiben bei den Landwirtinnen und Landwirten. Fachleute begleiten den Versuch und vergleichen die Daten mit den Ertraegen.",
-      "Neben der Technik geht es auch um Zusammenarbeit. Wenn Wasser knapp wird, braucht es Absprachen zwischen Betrieben, Gemeinden und Kanton. Das Projekt soll zeigen, wo solche Absprachen fruehzeitig noetig sind.",
+      "Die Technik ist bewusst einfach gehalten. Sensoren liefern Richtwerte, die Entscheide bleiben bei den Landwirtinnen und Landwirten. Fachleute begleiten den Versuch und vergleichen die Daten mit den Erträgen.",
+      "Neben der Technik geht es auch um Zusammenarbeit. Wenn Wasser knapp wird, braucht es Absprachen zwischen Betrieben, Gemeinden und Kanton. Das Projekt soll zeigen, wo solche Absprachen frühzeitig nötig sind.",
       "Erste Resultate werden nach der Ernte erwartet. Schon jetzt ist klar, dass lokale Erfahrungswerte eine wichtige Rolle spielen.",
     ],
   },
   {
     slug: "turnverein-reist-mit-grosser-delegation-ans-fest",
     title: "Turnverein reist mit grosser Delegation ans Fest",
-    subtitle: "Mehrere Riegen starten in Einzel- und Gruppenwettkaempfen.",
+    subtitle: "Mehrere Riegen starten in Einzel- und Gruppenwettkämpfen.",
     lead:
       "Der Verein hat in den letzten Wochen intensiv trainiert und setzt auf eine Mischung aus Routine und Nachwuchs.",
     category: "Sport",
@@ -260,19 +265,19 @@ export const articles: Article[] = [
     date: "2026-05-28",
     readingTime: "5 Min.",
     premium: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer regionalen Turnsport",
+    imageAlt: "Fiktives Symbolbild für regionalen Turnsport",
     paragraphs: [
-      "Die Vorfreude ist gross, die Packlisten sind lang. Der Turnverein reist mit einer breiten Delegation ans naechste Fest. Neben den Aktivriegen sind auch Jugendliche und mehrere Einzelturnende angemeldet.",
-      "Trainiert wurde in den letzten Wochen vor allem an Uebergaengen und Praezision. Kleine Fehler kosten in Gruppenprogrammen schnell Punkte. Die Verantwortlichen sehen dennoch gute Chancen, die Leistungen aus dem Vorjahr zu bestaetigen.",
-      "Fuer den Verein hat der Anlass auch eine soziale Bedeutung. Neue Mitglieder erleben zum ersten Mal, wie ein grosses Turnfest funktioniert, waehrend erfahrene Turnerinnen und Turner Verantwortung in Betreuung und Organisation uebernehmen.",
-      "Die Resultate werden am Sonntagabend erwartet. Unabhaengig davon steht fuer den Verein bereits fest, dass der gemeinsame Auftritt den Zusammenhalt staerkt.",
+      "Die Vorfreude ist gross, die Packlisten sind lang. Der Turnverein reist mit einer breiten Delegation ans nächste Fest. Neben den Aktivriegen sind auch Jugendliche und mehrere Einzelturnende angemeldet.",
+      "Trainiert wurde in den letzten Wochen vor allem an Übergängen und Präzision. Kleine Fehler kosten in Gruppenprogrammen schnell Punkte. Die Verantwortlichen sehen dennoch gute Chancen, die Leistungen aus dem Vorjahr zu bestätigen.",
+      "Für den Verein hat der Anlass auch eine soziale Bedeutung. Neue Mitglieder erleben zum ersten Mal, wie ein grosses Turnfest funktioniert, während erfahrene Turnerinnen und Turner Verantwortung in Betreuung und Organisation übernehmen.",
+      "Die Resultate werden am Sonntagabend erwartet. Unabhängig davon steht für den Verein bereits fest, dass der gemeinsame Auftritt den Zusammenhalt stärkt.",
     ],
   },
   {
     slug: "bibliothek-startet-lesesommer-fuer-kinder",
-    title: "Bibliothek startet Lesesommer fuer Kinder",
+    title: "Bibliothek startet Lesesommer für Kinder",
     subtitle: "Stempelkarte, Geschichtenmorgen und kleine Preise sollen zum Lesen motivieren.",
     lead:
       "Das Programm richtet sich an Kinder im Primarschulalter und verbindet Buecher mit Begegnung.",
@@ -281,34 +286,34 @@ export const articles: Article[] = [
     date: "2026-05-27",
     readingTime: "3 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Bibliothek und Kinderprogramm",
+    imageAlt: "Fiktives Symbolbild für Bibliothek und Kinderprogramm",
     paragraphs: [
-      "Mit dem Lesesommer will die Bibliothek Kindern zeigen, dass Buecher nicht nur Schulstoff sind. Wer mitmacht, sammelt Stempel fuer gelesene Geschichten und kann an mehreren Geschichtenmorgen teilnehmen.",
-      "Die Auswahl reicht von Bilderbuechern bis zu einfachen Sachbuechern. Mitarbeitende helfen bei der Suche nach passenden Titeln und stellen auch Medien fuer Kinder bereit, die noch nicht gerne lesen.",
+      "Mit dem Lesesommer will die Bibliothek Kindern zeigen, dass Buecher nicht nur Schulstoff sind. Wer mitmacht, sammelt Stempel für gelesene Geschichten und kann an mehreren Geschichtenmorgen teilnehmen.",
+      "Die Auswahl reicht von Bilderbuechern bis zu einfachen Sachbuechern. Mitarbeitende helfen bei der Suche nach passenden Titeln und stellen auch Medien für Kinder bereit, die noch nicht gerne lesen.",
       "Zum Abschluss gibt es eine kleine Feier. Entscheidend sei nicht, wer am meisten gelesen habe, sondern dass Kinder positive Leseerlebnisse sammeln.",
     ],
   },
   {
     slug: "metallbetrieb-schafft-neue-lehrstellen",
     title: "Metallbetrieb schafft neue Lehrstellen",
-    subtitle: "Der Fachkraeftemangel fuehrt zu mehr Engagement in der Ausbildung.",
+    subtitle: "Der Fachkräftemangel führt zu mehr Engagement in der Ausbildung.",
     lead:
-      "Ein regionaler Betrieb baut seine Lehrlingsbetreuung aus und will Jugendliche frueher fuer technische Berufe gewinnen.",
+      "Ein regionaler Betrieb baut seine Lehrlingsbetreuung aus und will Jugendliche früher für technische Berufe gewinnen.",
     category: "Wirtschaft",
     author: "Fabian Moser",
     date: "2026-05-26",
     readingTime: "6 Min.",
     premium: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Industrie und Ausbildung",
+    imageAlt: "Fiktives Symbolbild für Industrie und Ausbildung",
     paragraphs: [
-      "Der Metallbetrieb spuert den Fachkraeftemangel direkt. Offene Stellen bleiben laenger unbesetzt, waehrend Auftraege komplexer werden. Deshalb investiert die Firma in zusaetzliche Lehrstellen und eine engere Begleitung der Lernenden.",
-      "Neu sollen Lernende nicht nur in der Produktion mitarbeiten, sondern auch Einblick in Planung, Qualitaetskontrolle und Kundenkontakt erhalten. Der Betrieb erhofft sich dadurch ein besseres Verstaendnis fuer den gesamten Auftrag.",
-      "Zusammen mit Schulen sind Schnuppertage geplant. Jugendliche sollen erleben, dass technische Berufe heute digitale Werkzeuge, Praezision und Teamarbeit verbinden.",
-      "Die ersten zusaetzlichen Lehrstellen werden im kommenden Sommer ausgeschrieben. Der Betrieb sieht die Ausbildung als langfristige Investition in die Region.",
+      "Der Metallbetrieb spürt den Fachkräftemangel direkt. Offene Stellen bleiben länger unbesetzt, während Aufträge komplexer werden. Deshalb investiert die Firma in zusätzliche Lehrstellen und eine engere Begleitung der Lernenden.",
+      "Neu sollen Lernende nicht nur in der Produktion mitarbeiten, sondern auch Einblick in Planung, Qualitätskontrolle und Kundenkontakt erhalten. Der Betrieb erhofft sich dadurch ein besseres Verständnis für den gesamten Auftrag.",
+      "Zusammen mit Schulen sind Schnuppertage geplant. Jugendliche sollen erleben, dass technische Berufe heute digitale Werkzeuge, Präzision und Teamarbeit verbinden.",
+      "Die ersten zusätzlichen Lehrstellen werden im kommenden Sommer ausgeschrieben. Der Betrieb sieht die Ausbildung als langfristige Investition in die Region.",
     ],
   },
   {
@@ -324,11 +329,11 @@ export const articles: Article[] = [
     premium: false,
     status: "Bereit",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer eine Mehrzweckhalle",
+    imageAlt: "Fiktives Symbolbild für eine Mehrzweckhalle",
     paragraphs: [
-      "Die Halle dient Schule, Vereinen und Gemeindeanlaessen. Nach Jahren intensiver Nutzung sind verschiedene Bauteile sanierungsbeduerftig. Eine Kommission empfiehlt nun ein etappiertes Vorgehen.",
-      "Prioritaet haben die Gebaeudetechnik, die Garderoben und Verbesserungen bei der Barrierefreiheit. Eine komplette Neugestaltung steht derzeit nicht im Vordergrund.",
-      "Der Gemeinderat will die Vorlage im Herbst beraten. Danach koennte ein Kredit an die Gemeindeversammlung kommen.",
+      "Die Halle dient Schule, Vereinen und Gemeindeanlässen. Nach Jahren intensiver Nutzung sind verschiedene Bauteile sanierungsbedürftig. Eine Kommission empfiehlt nun ein etappiertes Vorgehen.",
+      "Priorität haben die Gebäudetechnik, die Garderoben und Verbesserungen bei der Barrierefreiheit. Eine komplette Neugestaltung steht derzeit nicht im Vordergrund.",
+      "Der Gemeinderat will die Vorlage im Herbst beraten. Danach könnte ein Kredit an die Gemeindeversammlung kommen.",
     ],
   },
   {
@@ -336,26 +341,26 @@ export const articles: Article[] = [
     title: "Warum Vereinsberichte mehr sind als Routine",
     subtitle: "Eine Einordnung zur Bedeutung kleiner Meldungen.",
     lead:
-      "Nicht jede lokale Geschichte ist spektakulaer. Trotzdem zeigen Vereinsberichte, was eine Region zusammenhaelt.",
+      "Nicht jede lokale Geschichte ist spektakulär. Trotzdem zeigen Vereinsberichte, was eine Region zusammenhält.",
     category: "Meinung",
     author: "Redaktion",
     date: "2026-05-24",
     readingTime: "5 Min.",
     premium: true,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Vereinsleben und Lokalzeitung",
+    imageAlt: "Fiktives Symbolbild für Vereinsleben und Lokalzeitung",
     paragraphs: [
-      "Vereinsberichte werden manchmal unterschaetzt. Sie handeln von Hauptversammlungen, Jubilaeen, Ausfluegen und neuen Vorstandsmitgliedern. Auf den ersten Blick ist das Routine. Auf den zweiten Blick ist es ein Protokoll des Zusammenlebens.",
-      "In einer Region entstehen viele Verbindungen nicht in grossen Institutionen, sondern in Musikproben, Trainings, Feuerwehrmagazinen und Kulturgruppen. Wer darueber berichtet, macht sichtbar, wer Verantwortung uebernimmt.",
-      "Digital lassen sich solche Berichte neu buendeln. Dossiers, Fotogalerien und Vereinsseiten koennten helfen, laengerfristig auffindbar zu machen, was sonst nach wenigen Tagen verschwindet.",
-      "Das ist kein Ersatz fuer kritischen Journalismus. Aber es ist ein Teil davon, weil lokale Oeffentlichkeit auch aus Anerkennung, Erinnerung und Orientierung besteht.",
+      "Vereinsberichte werden manchmal unterschätzt. Sie handeln von Hauptversammlungen, Jubiläen, Ausflügen und neuen Vorstandsmitgliedern. Auf den ersten Blick ist das Routine. Auf den zweiten Blick ist es ein Protokoll des Zusammenlebens.",
+      "In einer Region entstehen viele Verbindungen nicht in grossen Institutionen, sondern in Musikproben, Trainings, Feuerwehrmagazinen und Kulturgruppen. Wer darüber berichtet, macht sichtbar, wer Verantwortung übernimmt.",
+      "Digital lassen sich solche Berichte neu buendeln. Dossiers, Fotogalerien und Vereinsseiten könnten helfen, längerfristig auffindbar zu machen, was sonst nach wenigen Tagen verschwindet.",
+      "Das ist kein Ersatz für kritischen Journalismus. Aber es ist ein Teil davon, weil lokale Oeffentlichkeit auch aus Anerkennung, Erinnerung und Orientierung besteht.",
     ],
   },
   {
     slug: "wanderweg-nach-unwetter-wieder-offen",
     title: "Wanderweg nach Unwetter wieder offen",
-    subtitle: "Freiwillige und Werkhof haben Schaeden behoben.",
+    subtitle: "Freiwillige und Werkhof haben Schäden behoben.",
     lead:
       "Nach mehreren Rutschungen ist ein beliebter Weg wieder passierbar. Einzelne Stellen bleiben markiert.",
     category: "Region",
@@ -363,13 +368,13 @@ export const articles: Article[] = [
     date: "2026-05-23",
     readingTime: "3 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Wanderwege in der Region",
+    imageAlt: "Fiktives Symbolbild für Wanderwege in der Region",
     paragraphs: [
-      "Das Unwetter hatte den Weg an mehreren Stellen beschaedigt. Kies wurde weggespuelt, kleine Rutschungen blockierten die Passage. Der Werkhof und Freiwillige konnten die wichtigsten Arbeiten nun abschliessen.",
+      "Das Unwetter hatte den Weg an mehreren Stellen beschädigt. Kies wurde weggespült, kleine Rutschungen blockierten die Passage. Der Werkhof und Freiwillige konnten die wichtigsten Arbeiten nun abschliessen.",
       "Die Gemeinde bittet Wandernde, die Markierungen zu beachten und bei starkem Regen auf Alternativrouten auszuweichen. Weitere Unterhaltsarbeiten sind im Sommer geplant.",
-      "Der Weg ist fuer den lokalen Tourismus wichtig, weil er mehrere Aussichtspunkte verbindet und haeufig von Familien genutzt wird.",
+      "Der Weg ist für den lokalen Tourismus wichtig, weil er mehrere Aussichtspunkte verbindet und häufig von Familien genutzt wird.",
     ],
   },
   {
@@ -377,7 +382,7 @@ export const articles: Article[] = [
     title: "Wochenmarkt sucht neue Standbetreiber",
     subtitle: "Das Angebot soll breiter werden und junge Produzentinnen ansprechen.",
     lead:
-      "Der Marktverein moechte mehr regionale Produkte, einfache Verpflegung und handwerkliche Angebote sichtbar machen.",
+      "Der Marktverein möchte mehr regionale Produkte, einfache Verpflegung und handwerkliche Angebote sichtbar machen.",
     category: "Huttwil",
     author: "Lea Christen",
     date: "2026-05-22",
@@ -385,56 +390,56 @@ export const articles: Article[] = [
     premium: false,
     status: "Entwurf",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Wochenmarkt und Gewerbe",
+    imageAlt: "Fiktives Symbolbild für Wochenmarkt und Gewerbe",
     paragraphs: [
-      "Der Wochenmarkt ist ein Treffpunkt, doch das Angebot schwankt. Der Marktverein sucht deshalb neue Standbetreiberinnen und Standbetreiber, die regelmaessig oder punktuell teilnehmen moechten.",
-      "Angesprochen sind Produzenten aus Landwirtschaft, Handwerk und Gastronomie. Auch kleine Teststaende sollen moeglich sein, damit neue Angebote ohne grosses Risiko ausprobiert werden koennen.",
+      "Der Wochenmarkt ist ein Treffpunkt, doch das Angebot schwankt. Der Marktverein sucht deshalb neue Standbetreiberinnen und Standbetreiber, die regelmässig oder punktuell teilnehmen möchten.",
+      "Angesprochen sind Produzenten aus Landwirtschaft, Handwerk und Gastronomie. Auch kleine Teststände sollen möglich sein, damit neue Angebote ohne grosses Risiko ausprobiert werden können.",
       "Die Gemeinde unterstuetzt die Suche mit vereinfachten Informationen zu Bewilligungen und Standkosten. Ziel ist ein Markt, der alltagstauglich bleibt und trotzdem neugierig macht.",
     ],
   },
   {
     slug: "musikschule-plant-gemeinsames-konzert",
     title: "Musikschule plant gemeinsames Konzert",
-    subtitle: "Schuelerinnen und Erwachsene treten erstmals im gleichen Programm auf.",
+    subtitle: "Schülerinnen und Erwachsene treten erstmals im gleichen Programm auf.",
     lead:
-      "Das Konzert soll Generationen verbinden und zeigen, wie vielfaeltig musikalische Bildung in der Region ist.",
+      "Das Konzert soll Generationen verbinden und zeigen, wie vielfältig musikalische Bildung in der Region ist.",
     category: "Kultur",
     author: "Rahel Steiner",
     date: "2026-05-21",
     readingTime: "4 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer Musikschule und Konzert",
+    imageAlt: "Fiktives Symbolbild für Musikschule und Konzert",
     paragraphs: [
-      "Die Musikschule bereitet ein Konzert vor, bei dem Kinder, Jugendliche und Erwachsene gemeinsam auftreten. Das Programm kombiniert kurze Einzelbeitraege mit Ensembles.",
+      "Die Musikschule bereitet ein Konzert vor, bei dem Kinder, Jugendliche und Erwachsene gemeinsam auftreten. Das Programm kombiniert kurze Einzelbeiträge mit Ensembles.",
       "Lehrpersonen sehen darin eine Chance, Hemmschwellen abzubauen. Wer sieht, dass auch Erwachsene noch lernen, erlebt Musikunterricht weniger als Leistungsdruck und mehr als gemeinsamen Prozess.",
       "Das Konzert findet in der Aula statt. Der Eintritt ist frei, eine Kollekte kommt dem Instrumentenfonds zugute.",
     ],
   },
   {
     slug: "regionalbank-eroeffnet-beratungsfenster-fuer-kmu",
-    title: "Regionalbank eroeffnet Beratungsfenster fuer KMU",
-    subtitle: "Kleine Betriebe koennen Fragen zu Investitionen und Nachfolge klaeren.",
+    title: "Regionalbank eröffnet Beratungsfenster für KMU",
+    subtitle: "Kleine Betriebe können Fragen zu Investitionen und Nachfolge klären.",
     lead:
-      "Das neue Angebot soll unkomplizierte Erstgespraeche ermoeglichen und Unternehmerinnen besser vernetzen.",
+      "Das neue Angebot soll unkomplizierte Erstgespräche ermöglichen und Unternehmerinnen besser vernetzen.",
     category: "Wirtschaft",
     author: "Fabian Moser",
     date: "2026-05-20",
     readingTime: "4 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer lokale Wirtschaft",
+    imageAlt: "Fiktives Symbolbild für lokale Wirtschaft",
     paragraphs: [
-      "Viele kleine Unternehmen stehen vor aehnlichen Fragen: Wie wird eine Investition finanziert, wann lohnt sich eine Erweiterung, und wie kann eine Nachfolge rechtzeitig vorbereitet werden?",
-      "Die Regionalbank richtet dafuer ein monatliches Beratungsfenster ein. Es handelt sich nicht um fertige Loesungen, sondern um Erstgespraeche, die weitere Schritte klaeren sollen.",
-      "Gewerbevertreter begruessen das Angebot, weil es kurze Wege schafft. Gerade Kleinstbetriebe haetten oft wenig Zeit, sich durch lange Abklaerungen zu arbeiten.",
+      "Viele kleine Unternehmen stehen vor ähnlichen Fragen: Wie wird eine Investition finanziert, wann lohnt sich eine Erweiterung, und wie kann eine Nachfolge rechtzeitig vorbereitet werden?",
+      "Die Regionalbank richtet dafür ein monatliches Beratungsfenster ein. Es handelt sich nicht um fertige Lösungen, sondern um Erstgespräche, die weitere Schritte klären sollen.",
+      "Gewerbevertreter begrüssen das Angebot, weil es kurze Wege schafft. Gerade Kleinstbetriebe hätten oft wenig Zeit, sich durch lange Abklärungen zu arbeiten.",
     ],
   },
   {
     slug: "leserbrief-zur-zukunft-des-dorfkerns",
-    title: "Leserbrief: Der Dorfkern braucht Alltag, nicht nur Anlaesse",
+    title: "Leserbrief: Der Dorfkern braucht Alltag, nicht nur Anlässe",
     subtitle: "Eine Stimme aus der Leserschaft zur Entwicklung des Zentrums.",
     lead:
       "Ein Leser fordert kleine, verlässliche Verbesserungen statt ausschliesslich grosser Projekte.",
@@ -443,16 +448,88 @@ export const articles: Article[] = [
     date: "2026-05-19",
     readingTime: "3 Min.",
     premium: false,
-    status: "Veroeffentlicht",
+    status: "Veröffentlicht",
     image: sharedImage,
-    imageAlt: "Fiktives Symbolbild fuer einen Dorfkern",
+    imageAlt: "Fiktives Symbolbild für einen Dorfkern",
     paragraphs: [
-      "Der Dorfkern lebt nicht nur an Markttagen. Er lebt dann, wenn Menschen kurz einkaufen, jemanden treffen, sitzen bleiben oder sicher mit dem Velo durchfahren koennen.",
-      "Grosse Projekte sind wichtig, aber sie ersetzen keine einfachen Verbesserungen. Mehr Schatten, klare Wege und ein paar gut platzierte Sitzbaenke wuerden bereits viel bewirken.",
-      "Wer den Dorfkern staerken will, sollte deshalb nicht nur an Veranstaltungen denken. Entscheidend ist der normale Dienstagmorgen.",
+      "Der Dorfkern lebt nicht nur an Markttagen. Er lebt dann, wenn Menschen kurz einkaufen, jemanden treffen, sitzen bleiben oder sicher mit dem Velo durchfahren können.",
+      "Grosse Projekte sind wichtig, aber sie ersetzen keine einfachen Verbesserungen. Mehr Schatten, klare Wege und ein paar gut platzierte Sitzbänke würden bereits viel bewirken.",
+      "Wer den Dorfkern stärken will, sollte deshalb nicht nur an Veranstaltungen denken. Entscheidend ist der normale Dienstagmorgen.",
     ],
   },
 ];
+
+function pickArticleImage(article: Article): string {
+  if (article.category === "Sport") {
+    return hockeyImage;
+  }
+
+  if (article.category === "Kultur") {
+    return cultureImage;
+  }
+
+  if (article.category === "Wirtschaft" || article.slug.includes("gewerbe")) {
+    return marketImage;
+  }
+
+  if (
+    article.slug.includes("schule") ||
+    article.slug.includes("schul") ||
+    article.slug.includes("jugend") ||
+    article.slug.includes("stadtpark")
+  ) {
+    return schoolGardenImage;
+  }
+
+  if (
+    article.slug.includes("landwirte") ||
+    article.slug.includes("bewässerung") ||
+    article.slug.includes("wanderweg")
+  ) {
+    return irrigationImage;
+  }
+
+  return sharedImage;
+}
+
+function pickArticleImageAlt(article: Article): string {
+  if (article.category === "Sport") {
+    return "Fiktives Foto einer regionalen Eishockey-Trainingssituation";
+  }
+
+  if (article.category === "Kultur") {
+    return "Fiktives Foto eines lokalen Kulturabends auf einem Dorfplatz";
+  }
+
+  if (article.category === "Wirtschaft" || article.slug.includes("gewerbe")) {
+    return "Fiktives Foto eines Schweizer Wochenmarkts mit lokalem Gewerbe";
+  }
+
+  if (
+    article.slug.includes("schule") ||
+    article.slug.includes("schul") ||
+    article.slug.includes("jugend") ||
+    article.slug.includes("stadtpark")
+  ) {
+    return "Fiktives Foto eines Schulgartens und lokaler Bildungsarbeit";
+  }
+
+  if (
+    article.slug.includes("landwirte") ||
+    article.slug.includes("bewässerung") ||
+    article.slug.includes("wanderweg")
+  ) {
+    return "Fiktives Foto regionaler Landwirtschaft mit Bewässerungstechnik";
+  }
+
+  return "Fiktives Foto einer Schweizer Dorfstrasse als Symbolbild für Lokaljournalismus";
+}
+
+export const articles: Article[] = demoArticles.map((article) => ({
+  ...article,
+  image: pickArticleImage(article),
+  imageAlt: pickArticleImageAlt(article),
+}));
 
 export const sortedArticles = [...articles].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),

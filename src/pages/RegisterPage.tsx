@@ -8,7 +8,7 @@ export function RegisterPage() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setMessage(
-      "Demo-Konto erstellt. In der echten Version wuerde hier ein Benutzerkonto angelegt.",
+      "Demo-Konto erstellt. In der echten Version würde hier ein Benutzerkonto angelegt.",
     );
   }
 
@@ -31,7 +31,7 @@ export function RegisterPage() {
         </div>
         <div>
           <label className="form-label" htmlFor="register-password-confirm">
-            Passwort bestaetigen
+            Passwort bestätigen
           </label>
           <input
             className="form-input mt-2"
@@ -46,7 +46,7 @@ export function RegisterPage() {
       </form>
       <div className="mt-5">
         <DemoNotice>
-          Dies ist nur ein Prototyp. Registrierung und E-Mail-Bestaetigung sind
+          Dies ist nur ein Prototyp. Registrierung und E-Mail-Bestätigung sind
           noch nicht angebunden.
         </DemoNotice>
       </div>

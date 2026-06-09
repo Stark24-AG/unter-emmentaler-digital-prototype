@@ -9,7 +9,7 @@ export function AdminArticleNewPage() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setMessage(
-      "Demo gespeichert. In der echten Version wuerde dieser Artikel in einer Datenbank gespeichert.",
+      "Demo gespeichert. In der echten Version würde dieser Artikel in einer Datenbank gespeichert.",
     );
   }
 
@@ -20,7 +20,7 @@ export function AdminArticleNewPage() {
       <div className="mt-6">
         <DemoNotice>
           Dieses Formular speichert nichts dauerhaft. Es zeigt nur, wie eine
-          einfache Redaktionsmaske aussehen koennte.
+          einfache Redaktionsmaske aussehen könnte.
         </DemoNotice>
       </div>
 
@@ -62,7 +62,7 @@ export function AdminArticleNewPage() {
           </div>
           <div>
             <label className="form-label" htmlFor="article-date">
-              Veroeffentlichungsdatum
+              Veröffentlichungsdatum
             </label>
             <input className="form-input mt-2" id="article-date" type="date" />
           </div>
@@ -73,7 +73,7 @@ export function AdminArticleNewPage() {
         </label>
         <div>
           <label className="form-label" htmlFor="article-preview">
-            Vorschau-Absaetze
+            Vorschau-Absätze
           </label>
           <textarea className="form-input mt-2 min-h-32" id="article-preview" />
         </div>
