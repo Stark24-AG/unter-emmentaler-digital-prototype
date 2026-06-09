@@ -4,6 +4,25 @@ import hockeyImage from "../assets/photo-hockey.webp";
 import irrigationImage from "../assets/photo-irrigation.webp";
 import marketImage from "../assets/photo-market.webp";
 import schoolGardenImage from "../assets/photo-school-garden.webp";
+import originalDanielBieriImage from "../assets/original/daniel-bieri.webp";
+import originalEmmentalischesSchwingfestImage from "../assets/original/emmentalisches-schwingfest.webp";
+import originalFeldschiessenAndresImage from "../assets/original/feldschiessen-andres-sommer.webp";
+import originalFeldschiessenMartinImage from "../assets/original/feldschiessen-martin-lehmann.webp";
+import originalFraumattCityImage from "../assets/original/fraumatt-city.webp";
+import originalFrauenEishockeyImage from "../assets/original/frauen-eishockey.webp";
+import originalFusionFussballImage from "../assets/original/fusion-fussball-huttwil.webp";
+import originalGewerbeImage from "../assets/original/gewerbe-rohrbach.webp";
+import originalHeimwehImage from "../assets/original/heimweh-huttwil.webp";
+import originalMichelinImage from "../assets/original/michelin-luthern.webp";
+import originalMittellaendischesSchwingfestImage from "../assets/original/mittellaendisches-schwingfest.webp";
+import originalNaturheilkundeImage from "../assets/original/naturheilkunde.webp";
+import originalOberbuehlImage from "../assets/original/oberbuehl-schwinget.webp";
+import originalPastaImage from "../assets/original/pasta-luthern.webp";
+import originalPublicViewingImage from "../assets/original/public-viewing-huttwil.webp";
+import originalSchulgartenImage from "../assets/original/schulgarten-elzmatte.webp";
+import originalSensenImage from "../assets/original/sensen-huttwil.webp";
+import originalSkorpsImage from "../assets/original/skorps-sumiswald.webp";
+import originalTagDerOffenenTuerImage from "../assets/original/tag-der-offenen-tuer.webp";
 import type { Category } from "../lib/categories";
 
 export type ArticleStatus = "Entwurf" | "Bereit" | "Veröffentlicht";
@@ -459,6 +478,180 @@ const demoArticles: Article[] = [
   },
 ];
 
+const originalArticleOverrides: Record<string, Partial<Article>> = {
+  "begegnungszone-am-marktplatz-huttwil": {
+    title: "Huttwil bündelt die Fussballkräfte",
+    subtitle: "Ein Originalthema der aktuellen Startseite als Demo-Hero.",
+    lead:
+      "Der Prototyp zeigt, wie ein grosser Sport- und Vereinsartikel digital als Aufmacher mit Premium-Anschluss, Fototeaser und Abo-Hinweis funktionieren könnte.",
+    category: "Sport",
+    image: originalFusionFussballImage,
+    imageAlt: "Originalfoto zum Beitrag Huttwil bündelt die Fussballkräfte",
+  },
+  "juniorinnen-des-sc-huttwil-starten-in-die-vorbereitung": {
+    title: "Frauen-Eishockey ist weiterhin möglich",
+    subtitle: "Original-Schlagzeile aus dem Sportbereich.",
+    lead:
+      "Aus dem aktuellen Thema wird in der Demo ein Beispiel dafür, wie regionaler Frauensport online stärker sichtbar gemacht und als Premium-Dossier weitergeführt werden kann.",
+    category: "Sport",
+    image: originalFrauenEishockeyImage,
+    imageAlt: "Originalfoto zum Beitrag Frauen-Eishockey ist weiterhin möglich",
+  },
+  "langenthal-prueft-neues-schulraumkonzept": {
+    title: "Unterricht mit Erde unter den Fingernägeln",
+    subtitle: "Ein Originalthema aus Langenthal mit starkem Bildbezug.",
+    lead:
+      "Der Schulgarten eignet sich als digitales Storytelling-Beispiel: Fotos, Kurzvideo, Elternbezug und eine vertiefende Premium-Einordnung könnten zusammenspielen.",
+    category: "Langenthal",
+    image: originalSchulgartenImage,
+    imageAlt: "Originalfoto zum Beitrag Unterricht mit Erde unter den Fingernägeln",
+  },
+  "feuerwehr-uebt-den-ernstfall-im-dorfzentrum": {
+    title: "Leise Arbeit mit scharfem Blatt",
+    subtitle: "Handwerk und lokale Menschen im Fokus.",
+    lead:
+      "Solche Porträts geben der digitalen Zeitung Nähe und Wiedererkennbarkeit. Die Demo zeigt, wie daraus ein ruhiger Premium-Artikel mit Bildwirkung werden kann.",
+    category: "Huttwil",
+    image: originalSensenImage,
+    imageAlt: "Originalfoto zum Beitrag Leise Arbeit mit scharfem Blatt",
+  },
+  "sommerbuehne-bringt-musik-auf-den-dorfplatz": {
+    title: "Naturromantik und Seelenbalsam vereint",
+    subtitle: "Kulturthema mit lokalem Veranstaltungscharakter.",
+    lead:
+      "Die Demo nutzt das Originalthema, um zu zeigen, wie Kulturberichte digital mit Bildergalerie, Vorbericht und Rückblick funktionieren könnten.",
+    category: "Kultur",
+    image: originalHeimwehImage,
+    imageAlt: "Originalfoto zum Beitrag Naturromantik und Seelenbalsam vereint",
+  },
+  "baeckerei-investiert-in-neuen-holzofen": {
+    title: "Montags riecht es in Luthern nach Pasta",
+    subtitle: "Regionaler Alltag, Handwerk und Wirtschaft.",
+    lead:
+      "Ein solches Gewerbe- und Hofporträt passt gut zu einer Digitalabo-Strategie, weil Bild, Herkunft und lokale Geschichte zusammenkommen.",
+    category: "Wirtschaft",
+    image: originalPastaImage,
+    imageAlt: "Originalfoto zum Beitrag Montags riecht es in Luthern nach Pasta",
+  },
+  "gemeinderat-debattiert-ueber-tempo-30": {
+    title: "Spazieren und Gewerbe entdecken",
+    subtitle: "Originalthema aus Rohrbach und Auswil.",
+    lead:
+      "Lokales Gewerbe kann digital mit Karten, Öffnungszeiten, Fotostrecken und kurzen Porträts ergänzt werden. Genau diese Richtung zeigt die Demo.",
+    category: "Wirtschaft",
+    image: originalGewerbeImage,
+    imageAlt: "Originalfoto zum Beitrag Spazieren und Gewerbe entdecken",
+  },
+  "lokaljournalismus-braucht-naehe-und-distanz": {
+    title: "«Ich bin stolz und enttäuscht zugleich»",
+    subtitle: "Interviewformat mit Sportbezug.",
+    lead:
+      "Interviews sind gutes Premium-Material: Leserinnen und Leser bekommen Einordnung, Stimme und Kontext, statt nur ein Resultat zu sehen.",
+    category: "Sport",
+    image: originalDanielBieriImage,
+    imageAlt: "Originalfoto zum Interviewbeitrag",
+  },
+  "jugendprojekt-oeffnet-werkstatt-am-samstag": {
+    title: "Grosses Interesse am Tag der offenen Tür",
+    subtitle: "Ein Originalthema aus Huttwil.",
+    lead:
+      "Besuchstage, Einblicke und lokale Institutionen lassen sich online mit Fotoauswahl, Kontaktboxen und weiterführenden Links besser präsentieren.",
+    category: "Huttwil",
+    image: originalTagDerOffenenTuerImage,
+    imageAlt: "Originalfoto zum Tag der offenen Tür",
+  },
+  "stadtpark-erhaelt-mehr-schattenplaetze": {
+    title: "Luthern auf der Karte der schönsten Dörfer",
+    subtitle: "Originalthema mit touristischem Bezug.",
+    lead:
+      "Regionale Orte und ihre Wahrnehmung lassen sich digital als Dossier mit Karte, Archivbeiträgen und Fotostrecke weitererzählen.",
+    category: "Region",
+    image: originalMichelinImage,
+    imageAlt: "Originalfoto zum Beitrag über Luthern",
+  },
+  "landwirte-testen-neue-bewaesserung": {
+    title: "Leidenschaft für Naturheilkunde",
+    subtitle: "Ein Thema aus dem Luzerner Hinterland.",
+    lead:
+      "Gesundheit, Kurse und regionale Anbieter können digital mit Service-Informationen und redaktioneller Einordnung verbunden werden.",
+    category: "Region",
+    image: originalNaturheilkundeImage,
+    imageAlt: "Originalfoto zum Beitrag Leidenschaft für Naturheilkunde",
+  },
+  "turnverein-reist-mit-grosser-delegation-ans-fest": {
+    title: "Mit Festsieg auf grosse Enttäuschung reagiert",
+    subtitle: "Aktueller Schwingfest-Beitrag als Sport-Premium-Beispiel.",
+    lead:
+      "Regionale Sportgeschichten profitieren online von Resultaten, Hintergrund, Porträts und Archivbezug.",
+    category: "Sport",
+    image: originalMittellaendischesSchwingfestImage,
+    imageAlt: "Originalfoto zum Mittelländischen Schwingfest",
+  },
+  "bibliothek-startet-lesesommer-fuer-kinder": {
+    title: "«Fraumatt City» geht in die 21. Auflage",
+    subtitle: "Lokaler Anlass mit Wiedererkennungswert.",
+    lead:
+      "Wiederkehrende Veranstaltungen lassen sich digital mit Terminen, Archiv, Vorschau und Rückblick stärker begleiten.",
+    category: "Kultur",
+    image: originalFraumattCityImage,
+    imageAlt: "Originalfoto zum Beitrag Fraumatt City",
+  },
+  "metallbetrieb-schafft-neue-lehrstellen": {
+    title: "Umzug ins Forum Sumiswald steht bevor",
+    subtitle: "Originalthema aus dem regionalen Sport.",
+    lead:
+      "Vereins- und Infrastrukturthemen zeigen, wie Digitalartikel nicht nur Resultate, sondern auch Entwicklung und Organisation erklären können.",
+    category: "Sport",
+    image: originalSkorpsImage,
+    imageAlt: "Originalfoto zum Beitrag Umzug ins Forum Sumiswald",
+  },
+  "kommission-empfiehlt-sanierung-der-mehrzweckhalle": {
+    title: "Pistolen-Maximumresultat für Andres Sommer",
+    subtitle: "Original-Schlagzeile zum Feldschiessen.",
+    lead:
+      "Resultatmeldungen können digital um Ranglisten, Archivvergleiche und Vereinskontext ergänzt werden.",
+    category: "Sport",
+    image: originalFeldschiessenAndresImage,
+    imageAlt: "Originalfoto zum Feldschiessen-Beitrag",
+  },
+  "warum-vereinsberichte-mehr-sind-als-routine": {
+    title: "Martin Lehmann schafft 72 Punkte",
+    subtitle: "Original-Schlagzeile aus dem Oberaargauer Feldschiessen.",
+    lead:
+      "Die Demo zeigt, wie kurze Sportmeldungen in einer digitalen Zeitung schnell auffindbar und klar kategorisiert werden können.",
+    category: "Sport",
+    image: originalFeldschiessenMartinImage,
+    imageAlt: "Originalfoto zum Beitrag Martin Lehmann schafft 72 Punkte",
+  },
+  "wanderweg-nach-unwetter-wieder-offen": {
+    title: "Walterswiler Brüder-Trio mit Kranzjubel",
+    subtitle: "Originalthema vom Emmentalischen Schwingfest.",
+    lead:
+      "Lokale Sporterfolge lassen sich digital gut mit Personenbezug, Fotogalerie und Premium-Hintergrund bündeln.",
+    category: "Sport",
+    image: originalEmmentalischesSchwingfestImage,
+    imageAlt: "Originalfoto zum Emmentalischen Schwingfest",
+  },
+  "wochenmarkt-sucht-neue-standbetreiber": {
+    title: "Fabio Hiltbrunner meldet sich stark zurück",
+    subtitle: "Originalthema vom Oberbühl-Schwinget.",
+    lead:
+      "Ein Sport-Comeback eignet sich für schnelle News, aber auch für eine vertiefende digitale Einordnung.",
+    category: "Sport",
+    image: originalOberbuehlImage,
+    imageAlt: "Originalfoto zum Oberbühl-Schwinget",
+  },
+  "musikschule-plant-gemeinsames-konzert": {
+    title: "Mit dem Sportclub an die Fussball-WM",
+    subtitle: "Originalthema zum Public Viewing in Huttwil.",
+    lead:
+      "Anlässe rund um Fussball und Vereinsleben können digital mit Terminen, Abo-Hinweisen und Community-Elementen kombiniert werden.",
+    category: "Sport",
+    image: originalPublicViewingImage,
+    imageAlt: "Originalfoto zum Public-Viewing-Beitrag",
+  },
+};
+
 function pickArticleImage(article: Article): string {
   if (article.category === "Sport") {
     return hockeyImage;
@@ -527,8 +720,11 @@ function pickArticleImageAlt(article: Article): string {
 
 export const articles: Article[] = demoArticles.map((article) => ({
   ...article,
-  image: pickArticleImage(article),
-  imageAlt: pickArticleImageAlt(article),
+  ...originalArticleOverrides[article.slug],
+})).map((article) => ({
+  ...article,
+  image: article.image || pickArticleImage(article),
+  imageAlt: article.imageAlt || pickArticleImageAlt(article),
 }));
 
 export const sortedArticles = [...articles].sort(

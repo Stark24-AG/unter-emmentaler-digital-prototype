@@ -7,6 +7,7 @@ Der Prototyp ist für eine Kundenpräsentation gedacht und kann direkt über Git
 ## Was der Prototyp zeigt
 
 - Startseite mit Artikel-Hierarchie, Rubriken und Newsletter-Box
+- Original-Schlagzeilen und freigegebene Originalfotos aus der aktuellen Referenzseite
 - Artikelliste mit Suche, Kategorie-Filter und Premium-Badges
 - Rubrikseiten für Huttwil, Langenthal, Region, Sport, Kultur, Wirtschaft, Politik und Meinung
 - Gratis-Artikel mit komplett sichtbarem Text
@@ -24,7 +25,7 @@ Der Prototyp ist für eine Kundenpräsentation gedacht und kann direkt über Git
 - keine echte Stripe-Integration
 - keine Webhooks
 - keine produktionsreife Paywall
-- keine kopierten Artikeltexte der bestehenden Website
+- keine kompletten kopierten Artikeltexte der bestehenden Website
 
 ## Technologie
 

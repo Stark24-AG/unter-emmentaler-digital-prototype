@@ -12,8 +12,8 @@ export function CurrentTopics() {
             </h2>
             <p className="mt-3 max-w-3xl text-sm leading-6 text-ink/70">
               Neu formulierte Demo-Teaser, angelehnt an die aktuellen Themen der
-              Referenzseite. Die Fotos sind eigene KI-generierte
-              Prototypbilder, keine kopierten Originalfotos.
+              Referenzseite. Headlines und Fotos stammen aus dem aktuellen
+              Originalmaterial, das für diesen Prototyp freigegeben ist.
             </p>
           </div>
           <a

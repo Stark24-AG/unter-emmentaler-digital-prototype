@@ -1,8 +1,8 @@
-import cultureImage from "../assets/photo-culture.webp";
-import hockeyImage from "../assets/photo-hockey.webp";
-import irrigationImage from "../assets/photo-irrigation.webp";
-import marketImage from "../assets/photo-market.webp";
-import schoolGardenImage from "../assets/photo-school-garden.webp";
+import danielBieriImage from "../assets/original/daniel-bieri.webp";
+import frauenEishockeyImage from "../assets/original/frauen-eishockey.webp";
+import gewerbeImage from "../assets/original/gewerbe-rohrbach.webp";
+import schulgartenImage from "../assets/original/schulgarten-elzmatte.webp";
+import sensenImage from "../assets/original/sensen-huttwil.webp";
 
 export interface CurrentTopic {
   title: string;
@@ -15,48 +15,48 @@ export interface CurrentTopic {
 
 export const currentTopics: CurrentTopic[] = [
   {
-    title: "Frauen-Eishockey bleibt regional sichtbar",
+    title: "Frauen-Eishockey ist weiterhin möglich",
     label: "Sport",
     teaser:
-      "Die Referenzseite setzt aktuell stark auf regionale Sportgeschichten. Für die Demo wird daraus ein modernes Premium-Dossier rund um Nachwuchs, Vereine und Perspektiven im Frauensport.",
+      "Original-Schlagzeile und Originalfoto der aktuellen Referenzseite. In der Demo wird daraus ein modernes Digital-Dossier rund um Nachwuchs, Vereine und Perspektiven im Frauensport.",
     href: "https://unter-emmentaler.ch/news-details/frauen-eishockey-ist-weiterhin-moeglich.html",
-    image: hockeyImage,
-    imageAlt: "Fiktives Foto eines regionalen Eishockeytrainings",
+    image: frauenEishockeyImage,
+    imageAlt: "Originalfoto zum Frauen-Eishockey-Beitrag des Unter-Emmentalers",
   },
   {
-    title: "Unterricht draussen: Schule wird anschaulich",
-    label: "Bildung",
+    title: "Unterricht mit Erde unter den Fingernägeln",
+    label: "Langenthal",
     teaser:
-      "Ein Schulgarten-Thema passt sehr gut zu einer Lokalzeitung, weil es Kinder, Eltern, Lehrpersonen und Gemeindeentwicklung zusammenbringt.",
+      "Schule, Alltag und Gemeindeentwicklung lassen sich digital gut als Bildergeschichte, Premium-Hintergrund oder Newsletter-Thema weiterführen.",
     href: "https://unter-emmentaler.ch/news-details/unterricht-mit-erde-unter-den-fingernaegeln.html",
-    image: schoolGardenImage,
-    imageAlt: "Fiktives Foto eines Schulgartens mit Unterricht im Freien",
+    image: schulgartenImage,
+    imageAlt: "Originalfoto zum Schulgarten-Beitrag des Unter-Emmentalers",
   },
   {
-    title: "Gewerbe entdecken statt nur vorbeigehen",
-    label: "Wirtschaft",
+    title: "Spazieren und Gewerbe entdecken",
+    label: "Oberaargau",
     teaser:
       "Lokale Gewerbeformate lassen sich digital gut mit Karten, Kurzporträts und Premium-Hintergründen verbinden.",
     href: "https://unter-emmentaler.ch/news-details/spazieren-und-gewerbe-entdecken.html",
-    image: marketImage,
-    imageAlt: "Fiktives Foto eines Dorfmarkts mit lokalen Ständen",
+    image: gewerbeImage,
+    imageAlt: "Originalfoto zum Gewerbe-Beitrag des Unter-Emmentalers",
   },
   {
-    title: "Kultur und Dorfleben als wiederkehrendes Dossier",
-    label: "Kultur",
+    title: "Leise Arbeit mit scharfem Blatt",
+    label: "Huttwil",
     teaser:
-      "Veranstaltungen, Vereinsleben und regionale Kultur könnten auf der Digitalplattform mehr Vorlauf, Rückblick und Fotostrecken erhalten.",
-    href: "https://unter-emmentaler.ch/news-details/fraumatt-city-geht-in-die-21-auflage.html",
-    image: cultureImage,
-    imageAlt: "Fiktives Foto eines lokalen Kulturabends",
+      "Handwerkliche Nahaufnahmen und lokale Porträts sind starkes Material für eine digitale Lokalzeitung mit Premium-Vertiefung.",
+    href: "https://unter-emmentaler.ch/news-details/leise-arbeit-mit-scharfem-blatt.html",
+    image: sensenImage,
+    imageAlt: "Originalfoto zum Sensen-Beitrag des Unter-Emmentalers",
   },
   {
-    title: "Landwirtschaft, Klima und Alltag erklären",
-    label: "Region",
+    title: "«Ich bin stolz und enttäuscht zugleich»",
+    label: "Sport",
     teaser:
-      "Themen wie Bewässerung, Wege, Felder und Dorfentwicklung eignen sich für erklärende Lokaljournalismus-Formate mit Grafiken und Bildern.",
-    href: "https://unter-emmentaler.ch/index.html",
-    image: irrigationImage,
-    imageAlt: "Fiktives Foto regionaler Landwirtschaft mit Bewässerung",
+      "Interviews funktionieren digital besonders gut mit Abo-Hinweis, Archivbezug und klarer Einordnung für Sportfans aus der Region.",
+    href: "https://unter-emmentaler.ch/news-details/ich-bin-stolz-und-enttaeuscht-zugleich.html",
+    image: danielBieriImage,
+    imageAlt: "Originalfoto zum Interview-Beitrag des Unter-Emmentalers",
   },
 ];

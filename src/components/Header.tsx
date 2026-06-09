@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logoImage from "../assets/original/logo.webp";
 import { CategoryNav } from "./CategoryNav";
 
 export function Header() {
@@ -15,11 +16,13 @@ export function Header() {
           onClick={closeMenu}
           aria-label="Zur Startseite"
         >
-          <span className="block font-serif text-2xl font-bold leading-tight text-ink sm:text-3xl">
-            Unter-Emmentaler
-          </span>
-          <span className="block text-xs font-bold uppercase text-brand-700">
-            Digital
+          <img
+            alt="Der Unter-Emmentaler"
+            className="h-10 w-auto sm:h-12"
+            src={logoImage}
+          />
+          <span className="mt-1 block text-xs font-bold uppercase text-brand-700">
+            Digitalabo-Prototyp
           </span>
         </Link>
 
