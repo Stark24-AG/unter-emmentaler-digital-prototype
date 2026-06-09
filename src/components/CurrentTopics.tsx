@@ -16,31 +16,18 @@ export function CurrentTopics() {
               Originalmaterial, das für diesen Prototyp freigegeben ist.
             </p>
           </div>
-          <a
-            className="section-link"
-            href="https://unter-emmentaler.ch/index.html"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Originalseite öffnen
-          </a>
         </div>
 
         <div className="mt-8 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
-          <a
-            className="group grid overflow-hidden border border-line bg-paper hover:border-brand-700 sm:grid-cols-[1fr_1fr]"
-            href={currentTopics[0].href}
-            rel="noreferrer"
-            target="_blank"
-          >
+          <article className="group grid overflow-hidden border border-line bg-paper sm:grid-cols-[1fr_1fr]">
             <img
               alt={currentTopics[0].imageAlt}
-              className="h-full min-h-72 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+              className="h-full min-h-72 w-full object-cover"
               src={currentTopics[0].image}
             />
             <div className="p-6 sm:p-8">
               <p className="section-kicker">{currentTopics[0].label}</p>
-              <h3 className="mt-3 font-serif text-3xl font-bold leading-tight text-ink group-hover:text-brand-700">
+              <h3 className="mt-3 font-serif text-3xl font-bold leading-tight text-ink">
                 {currentTopics[0].title}
               </h3>
               <p className="mt-4 text-sm leading-6 text-ink/75">
@@ -50,34 +37,31 @@ export function CurrentTopics() {
                 Quelle geprüft: 9. Juni 2026
               </p>
             </div>
-          </a>
+          </article>
 
           <div className="grid gap-4">
             {currentTopics.slice(1).map((topic) => (
-              <a
-                className="group grid grid-cols-[112px_1fr] overflow-hidden border border-line bg-paper hover:border-brand-700"
-                href={topic.href}
+              <article
+                className="group grid grid-cols-[112px_1fr] overflow-hidden border border-line bg-paper"
                 key={topic.title}
-                rel="noreferrer"
-                target="_blank"
               >
                 <img
                   alt={topic.imageAlt}
-                  className="h-full min-h-32 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                  className="h-full min-h-32 w-full object-cover"
                   src={topic.image}
                 />
                 <div className="p-4">
                   <p className="text-xs font-bold uppercase text-brand-700">
                     {topic.label}
                   </p>
-                  <h3 className="mt-2 font-serif text-xl font-bold leading-tight text-ink group-hover:text-brand-700">
+                  <h3 className="mt-2 font-serif text-xl font-bold leading-tight text-ink">
                     {topic.title}
                   </h3>
                   <p className="mt-2 line-clamp-3 text-sm leading-6 text-ink/70">
                     {topic.teaser}
                   </p>
                 </div>
-              </a>
+              </article>
             ))}
           </div>
         </div>

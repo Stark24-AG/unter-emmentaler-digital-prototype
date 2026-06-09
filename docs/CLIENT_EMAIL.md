@@ -2,22 +2,26 @@
 
 Guten Tag [Name]
 
-Ich habe mir Gedanken gemacht, wie der Unter-Emmentaler seine Artikel künftig stärker digital anbieten und mit einem einfachen Digitalabo monetarisieren könnte.
+Ich habe einen ersten Frontend-Prototyp vorbereitet, der zeigt, wie der Unter-Emmentaler seine Inhalte künftig digitaler präsentieren und mit einem einfachen Digitalabo ergänzen könnte.
 
-Dafür habe ich einen Frontend-Prototyp vorbereitet. Er zeigt, wie eine modernere digitale Artikelseite mit Kategorien, Premium-Artikeln, Paywall und Digitalabo aussehen könnte.
+Demo-Link:
+https://stark24-ag.github.io/unter-emmentaler-digital-prototype/
 
 Der Prototyp zeigt unter anderem:
 
-- Startseite mit Artikeln und Kategorien
-- Premium-Artikel mit Vorschau
-- Paywall nach einigen Absätzen
-- Abo-Seite mit Monats- und Jahresabo
-- Beispiel für Login/Konto
-- Demo einer einfachen Redaktionsoberfläche
+- eine modernere Startseite mit Original-Schlagzeilen und freigegebenem Bildmaterial
+- eine klare Artikelübersicht mit Rubriken
+- Premium-Artikel mit Vorschau und Paywall-Hinweis
+- eine Abo-Seite mit Monats- und Jahresabo als Demo
+- Beispiele für Login, Konto und eine einfache Redaktionsoberfläche
 
-Wichtig: Der Prototyp verarbeitet noch keine echten Zahlungen und ist noch nicht mit Ihrer aktuellen Website verbunden. Er dient zuerst dazu, die Idee visuell und funktional zu zeigen. Für eine echte Umsetzung müsste anschliessend geprüft werden, wie Ihre aktuelle Website technisch aufgebaut ist und wie Artikel heute erfasst werden.
+Wichtig: Es handelt sich bewusst noch nicht um eine produktive Lösung. Es werden keine echten Zahlungen verarbeitet, es gibt keine echten Benutzerkonten und die Abo-/Login-Funktionen sind nur als Oberfläche umgesetzt. Der Demo-Link führt auf einen separaten Prototyp und leitet nicht automatisch auf Ihre bestehende Website weiter.
 
-Gerne würde ich Ihnen den Prototyp unverbindlich zeigen und kurz erklären, welche Varianten realistisch wären und welche laufenden Kosten entstehen könnten.
+Ziel ist, die Idee visuell und funktional greifbar zu machen: Wie könnten Premium-Artikel, Digitalabo und redaktionelle Abläufe für den Unter-Emmentaler online aussehen?
+
+Für eine echte Umsetzung müsste anschliessend geprüft werden, wie Ihre aktuelle Website technisch aufgebaut ist, wie Artikel heute erfasst werden und welche Zahlungs-/Abo-Lösung am besten passt.
+
+Gerne würde ich Ihnen den Prototyp kurz zeigen und besprechen, welche Varianten realistisch wären und welche laufenden Kosten entstehen könnten.
 
 Freundliche Grüsse
 
