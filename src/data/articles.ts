@@ -146,7 +146,7 @@ const demoArticles: Article[] = [
     imageAlt: "Fiktives Symbolbild für lokale Kulturveranstaltungen",
     paragraphs: [
       "Die Sommerbühne startet mit drei Abenden im Juli. Das Programm reicht von akustischem Folk über Blasmusik in kleiner Besetzung bis zu einem jungen Chorprojekt. Der Eintritt bleibt frei, die Finanzierung erfolgt über Sponsoren und Kollekte.",
-      "Die Organisierenden wollen ein Format schaffen, das ohne grosse Infrastruktur auskommt. Eine mobile Buehne, einfache Beleuchtung und kurze Umbaupausen sollen genuegen. Entscheidend sei, dass die Menschen unkompliziert vorbeikommen können.",
+      "Die Organisierenden wollen ein Format schaffen, das ohne grosse Infrastruktur auskommt. Eine mobile Bühne, einfache Beleuchtung und kurze Umbaupausen sollen genügen. Entscheidend sei, dass die Menschen unkompliziert vorbeikommen können.",
       "Für lokale Kulturschaffende ist die Reihe eine willkommene Plattform. Gerade kleinere Formationen finden selten Auftrittsorte, die zwischen Vereinsabend und grossem Festival liegen.",
       "Sollte das Pilotprojekt funktionieren, könnte die Sommerbühne im nächsten Jahr erweitert werden. Denkbar sind Lesungen, Kinderkonzerte und ein Abend für Nachwuchsbands.",
     ],
@@ -166,7 +166,7 @@ const demoArticles: Article[] = [
     image: sharedImage,
     imageAlt: "Fiktives Symbolbild für lokales Gewerbe",
     paragraphs: [
-      "In der Backstube riecht es nach Sauerteig und frischem Holz. Der neue Ofen ist für die Bäckerei eine groessere Investition, soll aber langfristig Energie sparen und die Qualität stabilisieren.",
+      "In der Backstube riecht es nach Sauerteig und frischem Holz. Der neue Ofen ist für die Bäckerei eine grössere Investition, soll aber langfristig Energie sparen und die Qualität stabilisieren.",
       "Der Betrieb setzt vermehrt auf Mehl aus der Region. Für die Kundschaft soll sichtbar werden, welche Wege die Zutaten zurücklegen und weshalb handwerkliche Produkte ihren Preis haben.",
       "Neben klassischen Broten plant die Bäckerei neue Wochenangebote. Dabei sollen auch kleinere Mengen möglich sein, damit nicht zu viel Ware übrig bleibt.",
     ],
@@ -197,7 +197,7 @@ const demoArticles: Article[] = [
     title: "Lokaljournalismus braucht Nähe und Distanz",
     subtitle: "Ein Kommentar zur Rolle der Zeitung in kleinen Räumen.",
     lead:
-      "Wer lokal berichtet, kennt viele Beteiligte persoenlich. Gerade deshalb braucht es klare Regeln und transparente Einordnung.",
+      "Wer lokal berichtet, kennt viele Beteiligte persönlich. Gerade deshalb braucht es klare Regeln und transparente Einordnung.",
     category: "Meinung",
     author: "Redaktion",
     date: "2026-06-01",
@@ -209,7 +209,7 @@ const demoArticles: Article[] = [
     paragraphs: [
       "Lokaler Journalismus lebt von Nähe. Ohne Vertrauen, Anrufe, Hinweise und Gespräche am Rand einer Versammlung würden viele Geschichten gar nie sichtbar. Diese Nähe ist eine Stärke.",
       "Sie ist aber auch eine Verpflichtung. Wer über Vereine, Gemeinden und Unternehmen berichtet, muss Interessen offenlegen, sauber nachfragen und Kritik aushalten. Distanz entsteht nicht durch Abwesenheit, sondern durch klare Arbeitsweise.",
-      "Eine digitale Zeitung kann diese Arbeit sichtbarer machen. Sie kann Quellen erklären, Dossiers buendeln und Rückmeldungen schneller aufnehmen. Entscheidend bleibt, dass die journalistische Haltung erkennbar ist.",
+      "Eine digitale Zeitung kann diese Arbeit sichtbarer machen. Sie kann Quellen erklären, Dossiers bündeln und Rückmeldungen schneller aufnehmen. Entscheidend bleibt, dass die journalistische Haltung erkennbar ist.",
     ],
   },
   {
@@ -227,7 +227,7 @@ const demoArticles: Article[] = [
     image: sharedImage,
     imageAlt: "Fiktives Symbolbild für ein Jugendprojekt",
     paragraphs: [
-      "Am Samstag stehen die Werkstatttüren offen. Besucherinnen und Besucher können sehen, wie alte Velos wieder fahrtüchtig gemacht und einfache Holzmoebel gebaut werden. Das Projekt richtet sich an Jugendliche, die gerne praktisch arbeiten.",
+      "Am Samstag stehen die Werkstatttüren offen. Besucherinnen und Besucher können sehen, wie alte Velos wieder fahrtüchtig gemacht und einfache Holzmöbel gebaut werden. Das Projekt richtet sich an Jugendliche, die gerne praktisch arbeiten.",
       "Begleitet werden sie von Fachpersonen und Freiwilligen. Neben handwerklichen Fähigkeiten geht es um Pünktlichkeit, Teamarbeit und den Mut, eigene Ideen auszuprobieren.",
       "Die Organisierenden hoffen, dass aus dem Aktionstag neue Kontakte entstehen. Gesucht werden Materialspenden, Mentoren und Betriebe, die Schnuppermöglichkeiten anbieten.",
     ],
@@ -299,7 +299,7 @@ const demoArticles: Article[] = [
     title: "Bibliothek startet Lesesommer für Kinder",
     subtitle: "Stempelkarte, Geschichtenmorgen und kleine Preise sollen zum Lesen motivieren.",
     lead:
-      "Das Programm richtet sich an Kinder im Primarschulalter und verbindet Buecher mit Begegnung.",
+      "Das Programm richtet sich an Kinder im Primarschulalter und verbindet Bücher mit Begegnung.",
     category: "Kultur",
     author: "Rahel Steiner",
     date: "2026-05-27",
@@ -309,8 +309,8 @@ const demoArticles: Article[] = [
     image: sharedImage,
     imageAlt: "Fiktives Symbolbild für Bibliothek und Kinderprogramm",
     paragraphs: [
-      "Mit dem Lesesommer will die Bibliothek Kindern zeigen, dass Buecher nicht nur Schulstoff sind. Wer mitmacht, sammelt Stempel für gelesene Geschichten und kann an mehreren Geschichtenmorgen teilnehmen.",
-      "Die Auswahl reicht von Bilderbuechern bis zu einfachen Sachbuechern. Mitarbeitende helfen bei der Suche nach passenden Titeln und stellen auch Medien für Kinder bereit, die noch nicht gerne lesen.",
+      "Mit dem Lesesommer will die Bibliothek Kindern zeigen, dass Bücher nicht nur Schulstoff sind. Wer mitmacht, sammelt Stempel für gelesene Geschichten und kann an mehreren Geschichtenmorgen teilnehmen.",
+      "Die Auswahl reicht von Bilderbüchern bis zu einfachen Sachbüchern. Mitarbeitende helfen bei der Suche nach passenden Titeln und stellen auch Medien für Kinder bereit, die noch nicht gerne lesen.",
       "Zum Abschluss gibt es eine kleine Feier. Entscheidend sei nicht, wer am meisten gelesen habe, sondern dass Kinder positive Leseerlebnisse sammeln.",
     ],
   },
@@ -372,8 +372,8 @@ const demoArticles: Article[] = [
     paragraphs: [
       "Vereinsberichte werden manchmal unterschätzt. Sie handeln von Hauptversammlungen, Jubiläen, Ausflügen und neuen Vorstandsmitgliedern. Auf den ersten Blick ist das Routine. Auf den zweiten Blick ist es ein Protokoll des Zusammenlebens.",
       "In einer Region entstehen viele Verbindungen nicht in grossen Institutionen, sondern in Musikproben, Trainings, Feuerwehrmagazinen und Kulturgruppen. Wer darüber berichtet, macht sichtbar, wer Verantwortung übernimmt.",
-      "Digital lassen sich solche Berichte neu buendeln. Dossiers, Fotogalerien und Vereinsseiten könnten helfen, längerfristig auffindbar zu machen, was sonst nach wenigen Tagen verschwindet.",
-      "Das ist kein Ersatz für kritischen Journalismus. Aber es ist ein Teil davon, weil lokale Oeffentlichkeit auch aus Anerkennung, Erinnerung und Orientierung besteht.",
+      "Digital lassen sich solche Berichte neu bündeln. Dossiers, Fotogalerien und Vereinsseiten könnten helfen, längerfristig auffindbar zu machen, was sonst nach wenigen Tagen verschwindet.",
+      "Das ist kein Ersatz für kritischen Journalismus. Aber es ist ein Teil davon, weil lokale Öffentlichkeit auch aus Anerkennung, Erinnerung und Orientierung besteht.",
     ],
   },
   {
@@ -413,7 +413,7 @@ const demoArticles: Article[] = [
     paragraphs: [
       "Der Wochenmarkt ist ein Treffpunkt, doch das Angebot schwankt. Der Marktverein sucht deshalb neue Standbetreiberinnen und Standbetreiber, die regelmässig oder punktuell teilnehmen möchten.",
       "Angesprochen sind Produzenten aus Landwirtschaft, Handwerk und Gastronomie. Auch kleine Teststände sollen möglich sein, damit neue Angebote ohne grosses Risiko ausprobiert werden können.",
-      "Die Gemeinde unterstuetzt die Suche mit vereinfachten Informationen zu Bewilligungen und Standkosten. Ziel ist ein Markt, der alltagstauglich bleibt und trotzdem neugierig macht.",
+      "Die Gemeinde unterstützt die Suche mit vereinfachten Informationen zu Bewilligungen und Standkosten. Ziel ist ein Markt, der alltagstauglich bleibt und trotzdem neugierig macht.",
     ],
   },
   {

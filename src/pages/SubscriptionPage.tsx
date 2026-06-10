@@ -11,7 +11,7 @@ export function SubscriptionPage() {
     <main className="page-section">
       <div className="max-w-3xl">
         <p className="section-kicker">Digitalabo</p>
-        <h1 className="section-title mt-2">Premium lesen und Lokaljournalismus unterstuetzen</h1>
+        <h1 className="section-title mt-2">Premium lesen und Lokaljournalismus unterstützen</h1>
         <p className="mt-4 text-sm leading-6 text-ink/75">
           Drei einfache Demo-Angebote zeigen, wie eine spätere Abo-Seite für
           digitale Inhalte strukturiert werden könnte.

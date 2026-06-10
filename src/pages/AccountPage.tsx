@@ -41,7 +41,7 @@ export function AccountPage() {
       <div className="mt-5">
         <DemoNotice>
           In der echten Version wären hier Stripe-Abo-Status, Rechnungen und
-          Kündigung verknuepft.
+          Kündigung verknüpft.
         </DemoNotice>
       </div>
       <DemoToast message={message} onClose={() => setMessage("")} />

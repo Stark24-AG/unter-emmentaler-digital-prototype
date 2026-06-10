@@ -2,7 +2,7 @@
 
 ## 1. Ausgangslage
 
-Der Unter-Emmentaler verfuegt über starke lokale Inhalte, die digital sichtbarer und besser monetarisierbar gemacht werden könnten. Ein einfacher Digitalabo-Ansatz kann helfen, Premium-Inhalte klar zu kennzeichnen und die Zahlungsbereitschaft für Lokaljournalismus zu testen.
+Der Unter-Emmentaler verfügt über starke lokale Inhalte, die digital sichtbarer und besser monetarisierbar gemacht werden könnten. Ein einfacher Digitalabo-Ansatz kann helfen, Premium-Inhalte klar zu kennzeichnen und die Zahlungsbereitschaft für Lokaljournalismus zu testen.
 
 ## 2. Ziel des Prototyps
 
@@ -54,5 +54,5 @@ Eine echte Umsetzung könnte in einem zweiten Schritt als MVP aufgebaut werden. 
 - GitHub Pages für Prototyp: kostenlos
 - echtes Hosting später: ca. CHF 0-25/Monat für kleine Lösung
 - Datenbank/Auth später: ca. CHF 0-25/Monat
-- Stripe Gebuehren pro Zahlung
+- Stripe-Gebühren pro Zahlung
 - Wartung optional: CHF 150-500/Monat

@@ -5,7 +5,7 @@ export function PaywallBox() {
     "Alle Premium-Artikel freischalten",
     "Jederzeit kündbar",
     "Sicher bezahlen",
-    "Lokaljournalismus unterstuetzen",
+    "Lokaljournalismus unterstützen",
   ];
 
   return (
@@ -16,7 +16,7 @@ export function PaywallBox() {
       </h2>
       <p className="mt-4 leading-7 text-ink/80">
         Erhalten Sie Zugriff auf alle Premium-Artikel des Unter-Emmentalers und
-        unterstuetzen Sie unabhängigen Lokaljournalismus aus der Region.
+        unterstützen Sie unabhängigen Lokaljournalismus aus der Region.
       </p>
       <ul className="mt-5 grid gap-2 text-sm font-semibold text-ink sm:grid-cols-2">
         {benefits.map((benefit) => (
