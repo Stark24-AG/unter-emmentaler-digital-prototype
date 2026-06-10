@@ -1,6 +1,6 @@
 # Betreff: Unverbindliche Idee: Digitalabo-Prototyp für den Unter-Emmentaler
 
-Guten Tag [Name]
+Guten Tag
 
 Mein Name ist Thierry Andres. Ich bin Informatiker in Ausbildung und interessiere mich dafür, wie lokale Medien ihre Inhalte online klarer präsentieren und besser monetarisieren können.
 

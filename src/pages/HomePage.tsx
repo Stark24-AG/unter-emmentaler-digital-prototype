@@ -24,7 +24,7 @@ export function HomePage() {
           <div className="flex flex-col justify-center">
             <div className="mb-5 flex flex-wrap gap-2 text-xs font-bold uppercase text-ink/65">
               <span className="border border-line bg-white px-3 py-1">
-                Demo-Ausgabe 09.06.2026
+                Konzeptstand 09.06.2026
               </span>
               <span className="border border-line bg-white px-3 py-1">
                 Huttwil · Langenthal · Region
@@ -35,13 +35,13 @@ export function HomePage() {
               Unter-Emmentaler Digital
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-ink/75">
-              Ein Präsentationsprototyp für Premium-Artikel, Paywall,
-              Digitalabo, aktuelle Themen und eine einfache Redaktionsidee.
+              Ein digitaler Vorschlag für regionale Berichterstattung,
+              Premium-Artikel und ein ergänzendes Digitalabo.
             </p>
             <div className="mt-6 grid gap-3 border-y border-line py-4 text-sm text-ink/75 sm:grid-cols-3">
               <div>
                 <strong className="block text-2xl text-brand-700">20</strong>
-                fiktive Artikel
+                Beispielartikel
               </div>
               <div>
                 <strong className="block text-2xl text-brand-700">5</strong>
@@ -49,7 +49,7 @@ export function HomePage() {
               </div>
               <div>
                 <strong className="block text-2xl text-brand-700">40%</strong>
-                Premium-Demo
+                Premium-Anteil
               </div>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
