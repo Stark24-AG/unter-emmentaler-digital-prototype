@@ -17,9 +17,9 @@ export const currentTopics: CurrentTopic[] = [
     title: "Frauen-Eishockey ist weiterhin möglich",
     label: "Sport",
     teaser:
-      "Original-Schlagzeile und Originalfoto der aktuellen Referenzseite. In der Demo wird daraus ein modernes Digital-Dossier rund um Nachwuchs, Vereine und Perspektiven im Frauensport.",
+      "In der Demo wird daraus ein modernes Digital-Dossier rund um Nachwuchs, Vereine und Perspektiven im Frauensport.",
     image: frauenEishockeyImage,
-    imageAlt: "Originalfoto zum Frauen-Eishockey-Beitrag des Unter-Emmentalers",
+    imageAlt: "Bildteaser zum Frauen-Eishockey-Beitrag",
   },
   {
     title: "Unterricht mit Erde unter den Fingernägeln",
@@ -27,7 +27,7 @@ export const currentTopics: CurrentTopic[] = [
     teaser:
       "Schule, Alltag und Gemeindeentwicklung lassen sich digital gut als Bildergeschichte, Premium-Hintergrund oder Newsletter-Thema weiterführen.",
     image: schulgartenImage,
-    imageAlt: "Originalfoto zum Schulgarten-Beitrag des Unter-Emmentalers",
+    imageAlt: "Bildteaser zum Schulgarten-Beitrag",
   },
   {
     title: "Spazieren und Gewerbe entdecken",
@@ -35,7 +35,7 @@ export const currentTopics: CurrentTopic[] = [
     teaser:
       "Lokale Gewerbeformate lassen sich digital gut mit Karten, Kurzporträts und Premium-Hintergründen verbinden.",
     image: gewerbeImage,
-    imageAlt: "Originalfoto zum Gewerbe-Beitrag des Unter-Emmentalers",
+    imageAlt: "Bildteaser zum Gewerbe-Beitrag",
   },
   {
     title: "Leise Arbeit mit scharfem Blatt",
@@ -43,7 +43,7 @@ export const currentTopics: CurrentTopic[] = [
     teaser:
       "Handwerkliche Nahaufnahmen und lokale Porträts sind starkes Material für eine digitale Lokalzeitung mit Premium-Vertiefung.",
     image: sensenImage,
-    imageAlt: "Originalfoto zum Sensen-Beitrag des Unter-Emmentalers",
+    imageAlt: "Bildteaser zum Sensen-Beitrag",
   },
   {
     title: "«Ich bin stolz und enttäuscht zugleich»",
@@ -51,6 +51,6 @@ export const currentTopics: CurrentTopic[] = [
     teaser:
       "Interviews funktionieren digital besonders gut mit Abo-Hinweis, Archivbezug und klarer Einordnung für Sportfans aus der Region.",
     image: danielBieriImage,
-    imageAlt: "Originalfoto zum Interview-Beitrag des Unter-Emmentalers",
+    imageAlt: "Bildteaser zum Interview-Beitrag",
   },
 ];

@@ -11,7 +11,7 @@ https://thierryandres.github.io/unter-emmentaler-digital-prototype/#/
 
 Der Prototyp zeigt unter anderem:
 
-- eine modernere Startseite mit Original-Schlagzeilen und freigegebenem Bildmaterial
+- eine modernere Startseite mit Rubriken, Artikeln und Bildteasern
 - eine klare Artikelübersicht mit Rubriken
 - Premium-Artikel mit Vorschau und Paywall-Hinweis
 - eine Abo-Seite mit Monats- und Jahresabo

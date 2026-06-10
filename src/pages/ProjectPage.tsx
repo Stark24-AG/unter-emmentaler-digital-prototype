@@ -27,7 +27,7 @@ export function ProjectPage() {
         <p>
           Für eine echte Umsetzung müsste zuerst geprüft werden, wie die
           bestehende Website technisch aufgebaut ist und wie Artikel heute
-          erfasst, freigegeben und veröffentlicht werden.
+          erfasst, redigiert und veröffentlicht werden.
         </p>
       </div>
 

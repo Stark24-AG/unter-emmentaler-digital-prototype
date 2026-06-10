@@ -11,9 +11,9 @@ export function CurrentTopics() {
               Themen aus der heutigen Unter-Emmentaler-Welt
             </h2>
             <p className="mt-3 max-w-3xl text-sm leading-6 text-ink/70">
-              Neu formulierte Demo-Teaser, angelehnt an die aktuellen Themen der
-              Referenzseite. Headlines und Fotos stammen aus dem aktuellen
-              Originalmaterial, das für diesen Prototyp freigegeben ist.
+              Neu formulierte Demo-Teaser, angelehnt an aktuelle regionale
+              Themen. Die Kacheln zeigen, wie solche Inhalte digital stärker
+              inszeniert werden könnten.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export function CurrentTopics() {
                 {currentTopics[0].teaser}
               </p>
               <p className="mt-6 text-xs font-bold uppercase text-ink/55">
-                Quelle geprüft: 9. Juni 2026
+                Demo-Stand: 9. Juni 2026
               </p>
             </div>
           </article>
